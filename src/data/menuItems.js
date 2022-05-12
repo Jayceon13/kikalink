@@ -9,9 +9,4 @@ export const menuItems = [
         icon: 'videocam',
         link: { path: '/video'}
     },
-    {
-        displayName: 'Запись',
-        icon: 'today',
-        link: { path: '/record'}
-    },
 ]

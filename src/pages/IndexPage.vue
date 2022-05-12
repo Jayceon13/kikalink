@@ -12,6 +12,11 @@
       <div class="my-btn">
       <q-btn @click="$router.push('/services')" class="my-btn" outline style="color: white">УСЛУГИ</q-btn>
       <q-btn @click="$router.push('/about')" class="my-btn" outline style="color: white">ОБО МНЕ</q-btn>
+      <div class="my-btn-raw">
+        <q-btn href = 'https://api.whatsapp.com/send?phone=79811853911&text=' round color="primary" style="margin: 15px"> <img style="border-radius: 50%" src="../assets/whatsapp.svg"/></q-btn>
+        <q-btn href = 'https://www.youtube.com/channel/UCkgLlrr4KACgtnpr1Q5D5kw' round color="primary" style="margin: 15px"> <img src="../assets/youtube.svg"/></q-btn>
+        <q-btn href = 'https://t.me/k_alferuk' round color="primary" style="margin: 15px"> <img style="border-radius: 50%" src="../assets/telegram.svg"/></q-btn>
+      </div>
       </div>
     </q-page>
   </div>
@@ -22,6 +27,9 @@
 .my-btn {
   display: flex;
   flex-direction: column;
+  margin: 15px;
+}
+.my-btn-row q-btn{
   margin: 15px;
 }
 </style>
