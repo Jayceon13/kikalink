@@ -6,6 +6,7 @@
   "author": "Jay <jayceon310893@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev",
     "build": "quasar build",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
