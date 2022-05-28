@@ -9,6 +9,16 @@
         allowfullscreen
       ></iframe>
     </div>
+    <br />
+    <div class="video-youtube">
+      <iframe
+        width="300"
+        height="500"
+        src="https://youtube.com/embed/v30BPffEjTQ?feature=share"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
   </q-page>
 </template>
 
