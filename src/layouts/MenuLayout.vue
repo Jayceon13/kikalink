@@ -1,10 +1,16 @@
 <template>
-  <q-layout view="hHh Lpr fFf"> <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout view="hHh Lpr fFf">
+    <!-- Be sure to play with the Layout demo on docs -->
 
     <!-- (Optional) The Header -->
     <q-header elevated>
       <q-toolbar>
-        <q-toolbar-title @click="$router.push('/')" align="center" class="font-Chilanka-bold text-3XL">
+        <q-toolbar-title
+          @click="$router.push('/')"
+          align="center"
+          class="font-Chilanka-bold text-3XL"
+          style="cursor: pointer"
+        >
           KIKA PRO MAKEUP
         </q-toolbar-title>
       </q-toolbar>
@@ -26,22 +32,6 @@
     </q-header>
 
     <!-- (Optional) The Footer -->
-    <q-footer class="px-5">
-      <q-tabs switch-indicator class="tabs-bottom"
-              indicator-color="transparent"
-              narrow-indicator
-      >
-        <q-route-tab
-          v-for="(menuItems, index) in menuItems"
-          :key="index"
-          :icon="menuItems.icon"
-          :to="menuItems.link"
-          :label="menuItems.displayName"
-          replace
-          :ripple="false"
-        />
-      </q-tabs>
-    </q-footer>
 
     <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
 
@@ -49,7 +39,6 @@
       <!-- This is where pages get injected -->
       <router-view />
     </q-page-container>
-
   </q-layout>
 </template>
 
@@ -58,23 +47,21 @@
   .q-tab {
     width: 50%;
   }
-    .q-tab__content {
-      .q-tab__label {
-        font-size: 11 px;
-      }
+  .q-tab__content {
+    .q-tab__label {
+      font-size: 11 px;
     }
   }
-
+}
 </style>
 
 <script>
 import { menuItems } from "src/data/menuItems";
-import { ref } from 'vue'
+import { ref } from "vue";
 
 export default {
-  data: () => ({ 
-      menuItems
-  })
-}
-
+  data: () => ({
+    menuItems,
+  }),
+};
 </script>
