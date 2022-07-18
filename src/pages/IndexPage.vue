@@ -31,7 +31,7 @@
           <q-btn
             href="https://api.whatsapp.com/send?phone=79811853911&text="
             round
-            color="primary"
+            color="rgb(71,71,71)"
             style="margin: 15px"
           >
             <img style="border-radius: 50%" src="../assets/whatsapp.svg"
