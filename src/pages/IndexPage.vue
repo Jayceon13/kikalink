@@ -24,7 +24,11 @@
           style="color: white"
           >ABOUT</q-btn
         >
-        <q-btn @click="showPhoto" class="my-btn" outline style="color: white"
+        <q-btn
+          @click="showBlockBtns"
+          class="my-btn"
+          outline
+          style="color: white"
           >MY WORKS</q-btn
         >
         <div class="my-btn-raw">
@@ -54,27 +58,28 @@
           /></q-btn>
         </div>
       </div>
-      <photo-works v-model:show="photoVisible"></photo-works>
+      <block-btns v-model:show="blockBtnsVisible"></block-btns>
     </q-page>
   </div>
 </template>
 
 <script>
 import PhotoWorks from "src/components/PhotoWorks.vue";
+import BlockBtns from "src/components/BlockBtns.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: { PhotoWorks },
+  components: { BlockBtns },
   name: "IndexPage",
   data() {
     return {
-      photoVisible: false,
+      blockBtnsVisible: false,
     };
   },
-  PhotoWorks,
+  BlockBtns,
   methods: {
-    showPhoto() {
-      this.photoVisible = true;
+    showBlockBtns() {
+      this.blockBtnsVisible = true;
     },
   },
 });
