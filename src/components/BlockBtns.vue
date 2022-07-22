@@ -3,7 +3,7 @@
     <slot>
       <div @click.stop class="block-btn">
         <q-btn
-          @click="showPhotoWorks"
+          @click="$router.push('/photo')"
           class="my-btn"
           outline
           style="color: white"
@@ -13,7 +13,6 @@
           >BROWS</q-btn
         >
       </div>
-      <photo-works v-model:show="photoVisible"></photo-works>
     </slot>
   </div>
 </template>
@@ -35,18 +34,6 @@ export default {
   methods: {
     hideBlock() {
       this.$emit("update:show", false);
-    },
-  },
-  components: { PhotoWorks },
-  data() {
-    return {
-      photoVisible: false,
-    };
-  },
-  PhotoWorks,
-  methods: {
-    showPhotoWorks() {
-      this.photoVisible = true;
     },
   },
 };
