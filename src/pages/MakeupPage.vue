@@ -18,15 +18,15 @@
         img-src="https://drive.google.com/uc?export=view&id=1mfzb54t_vkJNwrM1KTBxHq5duHjZouwh"
       />
       <q-carousel-slide
-        :name="4"
+        :name="5"
         img-src="https://drive.google.com/uc?export=view&id=1K1PtvLbPwdo26FAU6JIJc7n4kN_PISaM"
       />
       <q-carousel-slide
-        :name="5"
+        :name="6"
         img-src="https://drive.google.com/uc?export=view&id=10b7Jg6k9dEzvOheV3L_FVjJOLaH_44zI"
       />
       <q-carousel-slide
-        :name="6"
+        :name="7"
         img-src="https://drive.google.com/uc?export=view&id=1O4DV3ObD986hh1M_laOalkYZF1q9XiCx"
       />
     </q-carousel>
