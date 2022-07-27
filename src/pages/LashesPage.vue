@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md">
-    <q-carousel animated v-model="slide" arrows navigation infinite>
+    <q-carousel swipeable animated v-model="slide" thumbnails infinite>
       <q-carousel-slide
         :name="1"
         img-src="https://drive.google.com/uc?export=view&id=1lYD9zU5oi80FSIsY5Vmpwt4TbVsMKuEp"
@@ -18,7 +18,7 @@
         img-src="https://drive.google.com/uc?export=view&id=1nKIel5IGJhARcsoGVRTzv-4Wtz9qszxa"
       />
       <q-carousel-slide
-        :name="5"
+        :name="4"
         img-src="https://drive.google.com/uc?export=view&id=1ywYTTX93l2s5I-jalkJoukQoQ75EKg3b"
       />
     </q-carousel>
