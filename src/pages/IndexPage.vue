@@ -64,7 +64,6 @@
 </template>
 
 <script>
-import PhotoWorks from "src/components/PhotoWorks.vue";
 import BlockBtns from "src/components/BlockBtns.vue";
 import { defineComponent } from "vue";
 

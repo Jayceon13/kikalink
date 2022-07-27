@@ -18,8 +18,6 @@
 </template>
 
 <script>
-import PhotoWorks from "./PhotoWorks.vue";
-
 export default {
   name: "block-btns",
   setup() {
