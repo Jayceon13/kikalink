@@ -3,11 +3,11 @@
     <slot>
       <div @click.stop class="block-btn">
         <q-btn
-          @click="$router.push('/photo')"
+          @click="$router.push('/lashes')"
           class="my-btn"
           outline
           style="color: white"
-          >MAKE UP</q-btn
+          >LASHES</q-btn
         >
         <q-btn @click="showPhoto" class="my-btn" outline style="color: white"
           >BROWS</q-btn
