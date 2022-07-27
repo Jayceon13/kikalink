@@ -18,7 +18,7 @@
         img-src="https://drive.google.com/uc?export=view&id=1PlJWQTpyU5iAu8R6n_Fr9hv-oR2IQNkD"
       />
       <q-carousel-slide
-        :name="4"
+        :name="5"
         img-src="https://drive.google.com/uc?export=view&id=1n6WI-1NRXA2arhyrJ-viv0jS9pXbc45g"
       />
     </q-carousel>
