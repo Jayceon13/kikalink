@@ -7,14 +7,14 @@
           class="my-btn"
           outline
           style="color: white"
-          >LASHES / BROW</q-btn
+          >LASHES | BROW</q-btn
         >
         <q-btn
           @click="$router.push('/makeup')"
           class="my-btn"
           outline
           style="color: white"
-          >MAKE UP / SPECIAL EFFECTS</q-btn
+          >MAKE UP | SPECIAL EFFECTS</q-btn
         >
       </div>
     </slot>
