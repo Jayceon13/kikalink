@@ -14,7 +14,7 @@
           class="my-btn"
           outline
           style="color: white"
-          >MAKE UP | SPECIAL EFFECTS</q-btn
+          >MAKE UP | HAIR</q-btn
         >
       </div>
     </slot>
