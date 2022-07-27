@@ -3,14 +3,18 @@
     <slot>
       <div @click.stop class="block-btn">
         <q-btn
-          @click="$router.push('/lashes')"
+          @click="$router.push('/lashesbrow')"
           class="my-btn"
           outline
           style="color: white"
-          >LASHES</q-btn
+          >LASHES / BROW</q-btn
         >
-        <q-btn @click="showPhoto" class="my-btn" outline style="color: white"
-          >BROWS</q-btn
+        <q-btn
+          @click="$router.push('/makeup')"
+          class="my-btn"
+          outline
+          style="color: white"
+          >MAKE UP / SPECIAL EFFECTS</q-btn
         >
       </div>
     </slot>
