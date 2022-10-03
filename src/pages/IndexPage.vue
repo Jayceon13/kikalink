@@ -6,7 +6,7 @@
       </q-avatar>
       <img
         alt="KIKA PRO MAKEUP"
-        src="~assets/KIKAPROMAKEUP.svg"
+        src="~assets/KIKAPROMAKE.svg"
         style="width: 200px; height: 200px"
       />
       <div class="my-btn">
@@ -14,22 +14,19 @@
           @click="$router.push('/services')"
           class="my-btn"
           outline
-          style="color: white"
-          >SEVRICES</q-btn
+          >УСЛУГИ | SERVICES</q-btn
         >
         <q-btn
           @click="$router.push('/about')"
           class="my-btn"
           outline
-          style="color: white"
-          >ABOUT</q-btn
+          >ПРО МЕНЯ | ABOUT</q-btn
         >
         <q-btn
           @click="showBlockBtns"
           class="my-btn"
           outline
-          style="color: white"
-          >MY WORKS</q-btn
+          >МОИ РАБОТЫ | MY WORKS</q-btn
         >
         <div class="my-btn-raw">
           <q-btn
