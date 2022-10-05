@@ -1,9 +1,10 @@
 <template>
   <q-page padding>
+    <video id="background-video" autoplay loop muted poster="https://drive.google.com/uc?export=view&id=1ucLxMQydhHVVbe81-RDo2P1uulUz8E4t">
+      <source src="https://drive.google.com/uc?export=view&id=1922fTZ2r9Ut2MhCLUlLKO4N8d9xUGWnN" type="video/mp4">
+    </video>
     <div class="brow">
-      <img src="https://drive.google.com/uc?export=view&id=1gM9CPKbkvr4LJqXyKYdn21iQ249_mSno">
-    <br>
-      -Архитектура бровей /создание формы<br>
+      <p>-Архитектура бровей /создание формы<br>
       -Окрашивание /коррекция бровей (хна /краска)<br>
       -Осветление бровей<br>
       -Прореживание<br>
@@ -22,6 +23,7 @@
       Макияж тела ( грудь/ноги/руки)<br>
       Грим<br>
       <br>
+        </p>
       <q-btn
         href="https://api.whatsapp.com/send?phone=79811853911&text="
         class="my-btn"
@@ -29,8 +31,7 @@
       >ЗАПИСАТЬСЯ</q-btn
       >
       <br>
-      <img src="https://drive.google.com/uc?export=view&id=1C1g2dq4Gs0krckemNtc1wiva7M-sFnhB">
-      <br>
+      <p>
       -Architecture of eyebrows / shaping<br>
       - Coloring / correction of eyebrows (henna / dye<br>
       - Eyebrow lightening<br>
@@ -48,11 +49,12 @@
       Styling / hairstyle<br>
       Makeup + styling<br>
       <br>
+      </p>
       <q-btn
         href="https://api.whatsapp.com/send?phone=79811853911&text="
         class="my-btn"
         outline
-      >SING UP</q-btn
+      >RECORDING</q-btn
       >
     </div>
   </q-page>
@@ -66,6 +68,27 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media () {
+  #background-video { display: none; }
+  body {
+    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    background-size: cover;
+  }
+}
 .brow {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +96,12 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin: 50px;
+  font-family: Roboto-Slab;
+}
+
+.brow p{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .brow img {
