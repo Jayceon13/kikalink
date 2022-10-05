@@ -21,7 +21,7 @@
       Укладка / причёска<br>
       Макияж + укладка<br>
       Макияж тела ( грудь/ноги/руки)<br>
-      Грим<br>
+      Грим
       <br>
         </p>
       <q-btn
@@ -47,7 +47,7 @@
       💔 Look in 1.5 hours<br>
       Makeup of any complexity<br>
       Styling / hairstyle<br>
-      Makeup + styling<br>
+      Makeup + styling
       <br>
       </p>
       <q-btn
