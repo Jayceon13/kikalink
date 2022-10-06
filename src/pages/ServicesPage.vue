@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
-    <video id="background-video" autoplay loop muted poster="https://drive.google.com/uc?export=view&id=1ucLxMQydhHVVbe81-RDo2P1uulUz8E4t">
-      <source src="https://drive.google.com/uc?export=view&id=1922fTZ2r9Ut2MhCLUlLKO4N8d9xUGWnN" type="video/mp4">
+    <video id="background-video" autoplay loop muted poster="https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl">
+      <source src="https://drive.google.com/uc?export=view&id=12yVFkkHnrjNYj4pmu21oj2BUQ7dvC8pe" type="video/mp4">
     </video>
     <div class="brow">
       <p>-Архитектура бровей /создание формы<br>
