@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
     <div class="about">
-      <h1>dfef</h1>
+      <h1>dfeddf</h1>
       <img src="https://drive.google.com/uc?export=view&id=1ucLxMQydhHVVbe81-RDo2P1uulUz8E4t">
     </div>
   </q-page>
