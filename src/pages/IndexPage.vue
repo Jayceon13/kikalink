@@ -1,7 +1,7 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <q-avatar size="130px">
+      <q-avatar size="130px" class="photo">
         <img src="~assets/avatar.jpg" />
       </q-avatar>
       <img
@@ -86,5 +86,13 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   margin: 15px;
+}
+.photo {
+  animation: 5s show ease;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 </style>
