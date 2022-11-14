@@ -65,7 +65,7 @@
 export default {
   // name: 'PageName',
 }
-document.getElementById('background-video').play();
+
 </script>
 
 <style scoped>
