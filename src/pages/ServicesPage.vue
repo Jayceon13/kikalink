@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <video id="background-video" loop="true" autoplay="autoplay" muted poster="https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl">
+    <video id="background-video" loop="true" autoplay="autoplay" playsinline muted poster="https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl">
       <source src="https://drive.google.com/uc?export=view&id=12yVFkkHnrjNYj4pmu21oj2BUQ7dvC8pe" type="video/mp4">
     </video>
     <div class="brow">
