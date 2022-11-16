@@ -5,12 +5,12 @@
       <q-toolbar>
         <q-toolbar-title>
         </q-toolbar-title>
-
         <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
       </q-toolbar>
     </q-header>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
+      <button @click="toggleRightDrawer">X</button>
       <div class="my-btn">
         <q-btn
           @click="$router.push('/')"
