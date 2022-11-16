@@ -11,7 +11,7 @@
     </q-header>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <!-- drawer content -->
+    test
     </q-drawer>
 
     <q-page-container>
@@ -44,3 +44,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+.q-drawer {
+  background: rgba(255, 255, 255, 0.5);
+};
+
+</style>

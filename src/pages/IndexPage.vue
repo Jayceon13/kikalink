@@ -1,10 +1,8 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <q-avatar size="130px" class="photo">
-        <img src="~assets/avatar.jpg" />
-      </q-avatar>
       <img
+        class="logo"
         alt="KIKA PRO MAKEUP"
         src="~assets/KIKAPROMAKE.svg"
         style="width: 200px; height: 200px"
@@ -83,11 +81,12 @@ export default defineComponent({
 
 <style lang="scss">
 .my-btn {
+  color: white;
   display: flex;
   flex-direction: column;
   margin: 15px;
 }
-.photo {
+.logo {
   animation: 5s show ease;
 }
 
