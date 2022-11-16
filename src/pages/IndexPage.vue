@@ -8,24 +8,6 @@
         style="width: 200px; height: 200px"
       />
       <div class="my-btn">
-        <q-btn
-          @click="$router.push('/services')"
-          class="my-btn"
-          outline
-          >УСЛУГИ | SERVICES</q-btn
-        >
-        <q-btn
-          @click="$router.push('/about')"
-          class="my-btn"
-          outline
-          >ПРО МЕНЯ | ABOUT</q-btn
-        >
-        <q-btn
-          @click="showBlockBtns"
-          class="my-btn"
-          outline
-          >МОИ РАБОТЫ | MY WORKS</q-btn
-        >
         <div class="my-btn-raw">
           <q-btn
             href="https://api.whatsapp.com/send?phone=79811853911&text="

@@ -11,7 +11,26 @@
     </q-header>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-    test
+      <div class="my-btn">
+        <q-btn
+          @click="$router.push('/')"
+          class="my-btn"
+          outline
+        >ГЛАВНАЯ | HOME</q-btn
+        >
+        <q-btn
+          @click="$router.push('/services')"
+          class="my-btn"
+          outline
+        >УСЛУГИ | SERVICES</q-btn
+        >
+        <q-btn
+          @click="$router.push('/about')"
+          class="my-btn"
+          outline
+        >ПРО МЕНЯ | ABOUT</q-btn
+        >
+      </div>
     </q-drawer>
 
     <q-page-container>
