@@ -10,7 +10,7 @@
     </q-header>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <button @click="toggleRightDrawer"><img src="../assets/xicon.svg"/></button>
+      <button @click="toggleRightDrawer"><img src="../assets/xicon.svg" alt="X"/></button>
       <div class="my-btn">
         <q-btn
           @click="$router.push('/')"
