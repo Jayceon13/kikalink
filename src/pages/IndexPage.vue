@@ -1,33 +1,13 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <q-avatar size="130px">
-        <img src="~assets/avatar.jpg" />
-      </q-avatar>
       <img
+        class="logo"
         alt="KIKA PRO MAKEUP"
         src="~assets/KIKAPROMAKE.svg"
         style="width: 200px; height: 200px"
       />
       <div class="my-btn">
-        <q-btn
-          @click="$router.push('/services')"
-          class="my-btn"
-          outline
-          >УСЛУГИ | SERVICES</q-btn
-        >
-        <q-btn
-          @click="$router.push('/about')"
-          class="my-btn"
-          outline
-          >ПРО МЕНЯ | ABOUT</q-btn
-        >
-        <q-btn
-          @click="showBlockBtns"
-          class="my-btn"
-          outline
-          >МОИ РАБОТЫ | MY WORKS</q-btn
-        >
         <div class="my-btn-raw">
           <q-btn
             href="https://api.whatsapp.com/send?phone=79811853911&text="
@@ -83,8 +63,17 @@ export default defineComponent({
 
 <style lang="scss">
 .my-btn {
+  color: white;
   display: flex;
   flex-direction: column;
   margin: 15px;
+}
+.logo {
+  animation: 5s show ease;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 </style>
