@@ -19,6 +19,12 @@
         >ГЛАВНАЯ | HOME</q-btn
         >
         <q-btn
+          @click="$router.push('/')"
+          class="my-btn"
+          outline
+        >TEST</q-btn
+        >
+        <q-btn
           @click="$router.push('/services')"
           class="my-btn"
           outline
