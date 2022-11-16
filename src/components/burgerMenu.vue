@@ -2,6 +2,7 @@
   <div class="window-burger" v-if="show" @click="hideBurgerMenu">
     <slot>
       <div @click.stop class="block-burger">
+
         <q-btn
           @click="$router.push('/lashesbrow')"
           class="my-btn"
