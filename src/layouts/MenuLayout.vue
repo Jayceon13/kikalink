@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+  <q-layout view="hHh lpR fFf ">
 
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
@@ -65,6 +65,9 @@ export default {
 </script>
 
 <style lang="scss">
+.q-header .q-layout__shadow:after {
+  bottom: auto;
+}
 
 .q-drawer {
   background: rgba(255, 255, 255, 0.5);
