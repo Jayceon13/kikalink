@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <video id="bg-vdo" loop="true" playsinline muted :poster="vdoPoster">
+    <video id="bg-vdo" playsinline muted :poster="vdoPoster">
       <source :src="vdoSrc" type="video/mp4">
     </video>
     <div class="brow">
