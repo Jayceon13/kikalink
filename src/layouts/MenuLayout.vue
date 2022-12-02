@@ -12,7 +12,7 @@
       <button @click="toggleRightDrawer"
       style="position: absolute; top: 20px; right: 20px; background: none; border: 0px"><img src="../assets/xicon.svg" alt="X"/></button>
       <div class="my-btn"
-      style="display: flex; align-items: center">
+      style="display: flex; align-items: center; height: 100vh">
         <img
           class="logo"
           alt="KIKA PRO MAKEUP"
@@ -67,7 +67,7 @@
         >ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</q-btn
           >
         </div>
-        <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column">
+        <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column; margin-top: auto; height: 190px">
         <q-btn
           @click="blockBtnsLinks"
           class="my-btn-contact"
@@ -122,6 +122,9 @@
 .menuBlock{
   display: flex;
   justify-content: center;
+}
+.my-btn-contact {
+  margin-top: auto;
 }
 </style>
 
