@@ -6,13 +6,13 @@
       <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
     </q-toolbar>
 
-    <q-drawer v-model="rightDrawerOpen" :width="390" side="right" bordered
-    style="font-family: 'PT Sans';"
+    <q-drawer v-model="rightDrawerOpen" side="right" :width="395" bordered
+    style="font-family: 'PT Sans'; display: flex;"
     >
       <button @click="toggleRightDrawer"
       style="position: absolute; top: 20px; right: 20px; background: none; border: 0px"><img src="../assets/xicon.svg" alt="X"/></button>
       <div class="my-btn"
-      style="display: flex; align-items: center; height: 100vh">
+      style="display: flex; align-items: center; height: 100vh; width: 100%" >
         <img
           class="logo"
           alt="KIKA PRO MAKEUP"
