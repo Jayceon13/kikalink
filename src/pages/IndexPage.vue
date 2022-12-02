@@ -22,7 +22,7 @@
             color="primary"
             style="margin: 15px"
           >
-          </q-btn>
+          /></q-btn>
           <q-btn
             href="https://t.me/k_alferuk"
             round
