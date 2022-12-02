@@ -15,24 +15,21 @@
             color="rgb(71,71,71)"
             style="margin: 15px"
           >
-            <img style="border-radius: 50%" src="../assets/whatsapp.svg"
-          /></q-btn>
+          </q-btn>
           <q-btn
             href="https://www.youtube.com/channel/UCkgLlrr4KACgtnpr1Q5D5kw"
             round
             color="primary"
             style="margin: 15px"
           >
-            <img src="../assets/youtube.svg"
-          /></q-btn>
+          </q-btn>
           <q-btn
             href="https://t.me/k_alferuk"
             round
             color="primary"
             style="margin: 15px"
           >
-            <img style="border-radius: 50%" src="../assets/telegram.svg"
-          /></q-btn>
+          </q-btn>
         </div>
       </div>
       <block-btns v-model:show="blockBtnsVisible"></block-btns>

@@ -10,7 +10,7 @@
     style="font-family: 'PT Sans'; display: flex;"
     >
       <button @click="toggleRightDrawer"
-      style="position: absolute; top: 20px; right: 20px; background: none; border: 0px"><img src="../assets/xicon.svg" alt="X"/></button>
+      style="position: absolute; top: 20px; right: 20px; background: none; border: 0px"><img src="/icons/xicon.svg" alt="X"/></button>
       <div class="my-btn"
       style="display: flex; align-items: center; height: 100vh; width: 100%" >
         <img
@@ -81,7 +81,7 @@
             round
             color="rgb(71,71,71)"
           >WhatsApp
-            <img src="../assets/WhatsApp.svg"
+            <img src="/icons/Whatsapp.svg"
                  style="padding: 10px 0px"
 
             /></q-btn>
@@ -91,7 +91,7 @@
             round
             color="primary"
           >YouTube
-            <img src="../assets/YouTube.svg"
+            <img src="/icons/Youtube.svg"
                  style="padding: 10px 0px"
             /></q-btn>
 
@@ -102,7 +102,7 @@
             round
             color="primary"
           >YouTube
-            <img src="../assets/Telegram.svg"
+            <img src="/icons/Telegram.svg"
                  style="padding: 10px 0px"
             /></q-btn>
 
