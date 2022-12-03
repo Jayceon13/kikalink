@@ -1,4 +1,5 @@
 <template>
+  <div class="windowMenu">
   <div class="burgerMenu" v-if="show"
        style="font-family: 'PT Sans'; display: block;"
   >
@@ -101,6 +102,7 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -135,14 +137,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.burgerMenu{
+.windowMenu {
+  position: fixed;
   display: flex;
   color: black;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-};
-@media screen and (max-width: 600px) {
+  overflow-y: auto;
 }
+.burgerMenu{
+  background: black;
+}
+
 .q-btn {
   margin: 6px;
 }
@@ -151,7 +157,6 @@ export default {
   box-shadow: none;
 }
 .q-btn__content {
-  display: flex;
   flex-direction: column;
 }
 .BtnLink-contact {
@@ -167,4 +172,5 @@ export default {
   font-size: 12px;
   margin: 8px 0px;
 }
+
 </style>

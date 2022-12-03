@@ -1,10 +1,17 @@
 <template>
-    <q-toolbar elevated class="bg-primary text-white" style="flex-direction: row-reverse;">
-      <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style="position: sticky; position: -webkit-sticky; top: 0;"/>
-    </q-toolbar>
-  <block-burger v-model:show="showBurgerMenu"></block-burger>
-
   <q-layout view="hHh lpR fFf">
+    <q-header elevated class="bg-primary text-white" style="flex-direction: row-reverse;">
+        <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style="position: relative; top: 0;"/>
+    </q-header>
+    <div class="menu" style="position: fixed; z-index: 9999; ">
+      <block-burger v-model:show="showBurgerMenu" style="display: block"></block-burger>
+    </div>
+  <h1>dwda</h1>
+    <h1>dwda</h1>
+    <h1>dwda</h1>
+    <h1>dwda</h1>
+    <h1>dwda</h1>
+    <h1>dwda</h1>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -13,10 +20,8 @@
 </template>
 
 <style lang="scss">
-.menuBlock{
-  display: flex;
-  justify-content: center;
-}
+
+
 .my-btn-contact {
   margin-top: auto;
 }
@@ -28,11 +33,9 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   components: {BlockBurger,},
-  data() {
-    return {
+  data: () => ({
       showBurgerMenu: false,
-    }
-  },
+  }),
   BlockBurger,
   methods: {
     blockBurgerMenu() {
@@ -45,8 +48,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-
-
 
 </style>
 
