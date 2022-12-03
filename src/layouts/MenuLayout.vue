@@ -1,21 +1,22 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header elevated class="bg-primary text-white" style="flex-direction: row-reverse;">
-        <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style="position: relative; top: 0;"/>
-    </q-header>
-    <div class="menu" style="position: fixed; z-index: 9999; ">
-      <block-burger v-model:show="showBurgerMenu" style="display: block"></block-burger>
+    <div class="menu" v-scroll style="position: fixed; z-index: 9999; ">
+      <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
-  <h1>dwda</h1>
-    <h1>dwda</h1>
-    <h1>dwda</h1>
-    <h1>dwda</h1>
-    <h1>dwda</h1>
-    <h1>dwda</h1>
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-
+    <q-header elevated class="bg-primary text-white" style="">
+        <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style=" top: 0;"/>
+    </q-header>
+    <div class="page">
+      <h1>dwda</h1>
+      <h1>dwda</h1>
+      <h1>dwda</h1>
+      <h1>dwda</h1>
+      <h1>dwda</h1>
+      <h1>dwda</h1>
+      <q-page-container>
+        <router-view />
+      </q-page-container>
+    </div>
   </q-layout>
 </template>
 

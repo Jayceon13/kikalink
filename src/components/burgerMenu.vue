@@ -1,10 +1,7 @@
 <template>
-  <div class="windowMenu">
-  <div class="burgerMenu" v-if="show"
-       style="font-family: 'PT Sans'; display: block;"
-  >
+  <div class="burgerMenu" v-if="show">
     <div class="my-btn"
-         style="display: flex; align-items: center; height: 100vh; width: 100vw" >
+         style=" align-items: center; height: 100vh; width: 100vw; display: flex"  >
       <img
         class="logo"
         alt="KIKA PRO MAKEUP"
@@ -97,11 +94,9 @@
             <img src="/icons/Telegram.svg"
                  style="padding: 10px 0px"
             /></q-btn>
-
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -137,14 +132,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.windowMenu {
-  position: fixed;
-  display: flex;
-  color: black;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-y: auto;
-}
 .burgerMenu{
   background: black;
 }
