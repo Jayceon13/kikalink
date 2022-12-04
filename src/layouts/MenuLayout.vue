@@ -11,8 +11,6 @@
       <h1>dwda</h1>
       <h1>dwda</h1>
       <h1>dwda</h1>
-      <h1>dwda</h1>
-      <h1>dwda</h1>
       <q-page-container>
         <router-view />
       </q-page-container>
