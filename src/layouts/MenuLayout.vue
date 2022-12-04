@@ -1,14 +1,12 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-    <div class="menu" v-scroll style="position: fixed; z-index: 9999; ">
+  <q-layout view="hHh lpR fFf" style="font-size: 10px">
+    <div class="menu" v-scroll style="position: absolute; ">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
-    <q-header elevated class="bg-primary text-white" style="">
+    <q-header elevated class="bg-primary text-white" style="top: 20px; right: 20px; left: auto" >
         <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style=" top: 0;"/>
     </q-header>
-    <div class="page">
-      <h1>dwda</h1>
-      <h1>dwda</h1>
+    <div class="page" v-show="value1" style="background: #31ccec">
       <h1>dwda</h1>
       <h1>dwda</h1>
       <h1>dwda</h1>
@@ -26,24 +24,32 @@
 .my-btn-contact {
   margin-top: auto;
 }
+
 </style>
 
 <script>
 import BlockBurger from "components/burgerMenu";
 import { defineComponent } from "vue";
+import BlockPage from "pages/IndexPage";
+// let a =
 
 export default defineComponent({
   components: {BlockBurger,},
   data: () => ({
       showBurgerMenu: false,
+    value1: true,
   }),
   BlockBurger,
   methods: {
     blockBurgerMenu() {
       this.showBurgerMenu = !this.showBurgerMenu
+      this.value1 = !this.value1
     }
   },
-})
+
+});
+
+
 
 
 </script>

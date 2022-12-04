@@ -6,7 +6,7 @@
         class="logo"
         alt="KIKA PRO MAKEUP"
         src="~assets/KIKAPROMAKEUP-burger.svg"
-        style="width: 200px; height: 100px"
+        style="width: 200px; height: 80px"
       />
       <q-btn
         @click="$router.push('/index')"
@@ -56,7 +56,7 @@
         >ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</q-btn
         >
       </div>
-      <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column; margin-top: auto; height: 190px">
+      <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column; margin-top: auto; height: 190px; margin-bottom: 60px">
         <q-btn
           @click="blockBtnsLinks"
           class="my-btn-contact"
@@ -69,20 +69,27 @@
             href="https://api.whatsapp.com/send?phone=79811853911&text="
             round
             color="rgb(71,71,71)"
-          >WhatsApp
+          >
+             <span class="q-btn__content" style="flex-direction: column">
+               WhatsApp
             <img src="/icons/Whatsapp.svg"
                  style="padding: 10px 0px"
 
-            /></q-btn>
+            />
+             </span></q-btn>
           <q-btn
+            style="display: flex; flex-direction: column"
             class="BtnLink-contact"
             href="https://www.youtube.com/channel/UCkgLlrr4KACgtnpr1Q5D5kw"
             round
             color="primary"
-          >YouTube
+          >
+            <span class="q-btn__content" style="flex-direction: column">
+            YouTube
             <img src="/icons/Youtube.svg"
                  style="padding: 10px 0px"
-            /></q-btn>
+            />
+           </span></q-btn>
 
 
           <q-btn
@@ -90,10 +97,12 @@
             href="https://t.me/k_alferuk"
             round
             color="primary"
-          >YouTube
+          >
+            <span class="q-btn__content" style="flex-direction: column">
+              Telegram
             <img src="/icons/Telegram.svg"
                  style="padding: 10px 0px"
-            /></q-btn>
+            /></span></q-btn>
         </div>
       </div>
     </div>
@@ -132,6 +141,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .burgerMenu{
   background: black;
 }
@@ -143,21 +155,29 @@ export default {
 .q-btn:before {
   box-shadow: none;
 }
-.q-btn__content {
+span.q-btn__content {
+  display: flex;
   flex-direction: column;
 }
 .BtnLink-contact {
-  margin: 15px 26px;
+
+  margin: 6px 20px 0px;
   font-size: 10px;
   text-transform: none;
 }
 .my-btn{
   font-size: 18px;
   margin: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 .my-btn-services {
   font-size: 12px;
-  margin: 8px 0px;
+  margin: 2px 0px;
+}
+@media (min-height: 736px) {
+  .logo {
+   margin: 70px 0px 0px;
+  }
 }
 
 </style>
