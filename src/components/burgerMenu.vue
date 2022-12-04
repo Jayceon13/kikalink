@@ -161,7 +161,7 @@ span.q-btn__content {
 }
 .BtnLink-contact {
 
-  margin: 15px 26px;
+  margin: 6px 20px 0px;
   font-size: 10px;
   text-transform: none;
 }
