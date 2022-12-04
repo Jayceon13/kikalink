@@ -56,7 +56,7 @@
         >ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</q-btn
         >
       </div>
-      <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column; margin-top: auto; height: 190px; margin-bottom: 60px">
+      <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column;">
         <q-btn
           @click="blockBtnsLinks"
           class="my-btn-contact"
