@@ -3,7 +3,7 @@
     <div class="menu" v-scroll style="position: absolute; ">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
-    <q-header elevated class="bg-primary text-white" >
+    <q-header elevated class="bg-primary text-white" style="top: 20px; right: 20px; left: auto" >
         <q-btn dense flat round icon="menu" @click="blockBurgerMenu" style=" top: 0;"/>
     </q-header>
     <div class="page" v-show="value1" style="background: #31ccec">
@@ -20,9 +20,7 @@
 
 <style lang="scss">
 
-.my-btn {
-  font-family: 'PT Sans', sans-serif;
-}
+
 .my-btn-contact {
   margin-top: auto;
 }
