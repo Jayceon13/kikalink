@@ -1,9 +1,9 @@
 <template>
   <q-layout view="hHh lpR fFf" style="font-size: 10px">
-    <header class="bg-primary text-white" style="position: sticky; top: 0; width: 100vw; height: 40px" >
-      <button @click="blockBurgerMenu" style=" top: 0; padding: 10px;">burger</button>
+    <header class="bg-primary text-white" style="position: absolute; top: 0; width: 100vw; height: 40px; z-index: 2; display: flex; justify-content: flex-end" >
+      <button @click="blockBurgerMenu" style="position: fixed;margin: 10px 10px 0 0;">burger</button>
     </header>
-    <div class="menu" v-scroll style="position: absolute; ">
+    <div class="menu" v-scroll style="position: absolute; min-height: 100%">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
     <div class="page">
@@ -54,16 +54,5 @@ const blockBurgerMenu = () => {
   z-index: 10;
 }
 
-header q-btn {
-  position: relative;
-  z-index: 1;
-}
-.menu {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-}
 </style>
 
