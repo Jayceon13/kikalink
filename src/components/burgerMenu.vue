@@ -1,7 +1,6 @@
 <template>
   <div class="burgerMenu" v-if="show">
-    <div class="my-btn"
-         style=" align-items: center; height: 100vh; width: 100vw; display: flex"  >
+    <div class="my-btn">
       <img
         class="logo"
         alt="KIKA PRO MAKEUP"
@@ -141,11 +140,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
+.my-btn {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
 
 .burgerMenu{
   background: black;
+  position: fixed;
 }
 
 .q-btn {
