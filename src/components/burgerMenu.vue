@@ -1,6 +1,6 @@
 <template>
-  <div class="burgerMenu" v-if="show">
-    <div class="my-btn">
+  <div class="burgerMenu" v-if="show" style="position: absolute;">
+    <div class="my-btn" style="display: flex; align-items: center">
       <img
         class="logo"
         alt="KIKA PRO MAKEUP"
@@ -10,6 +10,7 @@
       <q-btn
         @click="$router.push('/index')"
         class="my-btn"
+        style="color: rgba(255, 255, 255, 1)"
       >ОБО МНЕ</q-btn
       >
       <q-btn
@@ -18,7 +19,7 @@
         style="color: rgba(255, 238, 193, 1)"
       >УСЛУГИ</q-btn
       >
-      <div class="blockBtn" @click.stop v-if="showBtns" style="display: flex; flex-direction: column;">
+      <div class="blockBtn" @click.stop v-if="showBtns" style="display: flex; flex-direction: column; color: rgba(255, 255, 255, 1)">
         <q-btn
           @click="$router.push('/about')"
           class="my-btn-services"
@@ -146,13 +147,22 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-.burgerMenu{
-  background: black;
-  position: fixed;
+
 }
 
+.burgerMenu {
+  background: black;
+  z-index: 1;
+  height: 100%;
+}
 .q-btn {
+  height: auto;
   margin: 6px;
 }
 
