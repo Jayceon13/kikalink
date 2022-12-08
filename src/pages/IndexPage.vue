@@ -16,12 +16,75 @@
         <div class="main-page" style="color: white">
           <div class="about-menu">
           <h5>ОБО МНЕ</h5>
-
           </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
           <div class="service-menu">
           <h5>УСЛУГИ</h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           <h5>АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           <h5>ПРОРЕЖИВАНИЕ</h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           <h5>ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
           <h5>ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
           <h5>ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
