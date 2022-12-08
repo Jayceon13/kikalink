@@ -30,7 +30,6 @@ import PreloaderMenu from "components/PreloaderMenu";
 
 // let a =
 
-const burgerSrc = '/icons/menu-icon.svg'
 
 const onScrollHandler = (pos) => {
   state.scrollY = pos
