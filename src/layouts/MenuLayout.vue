@@ -2,7 +2,7 @@
   <q-layout view="hHh lpR fFf" style="font-size: 10px">
     <preloader-menu/>
     <header class="bg-primary text-white" style="position: absolute; top: 0; width: 100%; height: 50px; z-index: 2; display: flex; justify-content: flex-end" >
-      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu" style="position: fixed;margin: 10px 10px 0 0;">
+      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
       <div class="hamburger-box">
         <div class="hamburger-inner"></div>
       </div>
@@ -51,7 +51,8 @@ const blockBurgerMenu = () => {
 
 .hamburger {
   position: fixed;
-
+  margin: 10px 10px 0 0;
+  padding: 10px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
