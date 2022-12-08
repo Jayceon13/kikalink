@@ -20,7 +20,7 @@
 </template>
 
 
-<script setup>
+<script setup type="text/javascript">
 import BlockBurger from "components/burgerMenu";
 import { defineComponent, ref, onMounted } from "vue";
 import { debounce } from 'quasar'

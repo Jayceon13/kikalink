@@ -98,7 +98,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup type="text/javascript">
 import {computed, onMounted, watch} from "vue";
 import {state} from "src/store/simplestore";
 
