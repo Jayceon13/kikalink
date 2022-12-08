@@ -6,6 +6,7 @@
 
 <style>
 .preloader {
+  font-family: 'PT Sans', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,7 +72,7 @@ position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: black;
   transform: translateX(-110%);
   animation: slideRight 1s ease-in-out forwards;
   animation-delay: .5s;
