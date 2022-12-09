@@ -13,8 +13,8 @@
       <transition
         class="animate__animated animate__bounce animate__slow"
       >
-        <div class="main-page" style="color: white">
-          <div class="about-menu">
+        <div class="main-page" style="color: white; margin: 20px">
+          <div id="_anim-item" :class="animOnScroll ? 'about-menu': 'about-menu _active'">
           <h5>ОБО МНЕ</h5>
           </div>
           <br>
@@ -98,9 +98,10 @@
   </div>
 </template>
 
-<script setup type="text/javascript">
+<script setup>
 import {computed, onMounted, watch} from "vue";
 import {state} from "src/store/simplestore";
+
 
 const vdoPoster = 'https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl' // Переложи обложку локально, рядом с видео
 const vdoSrc = '/assets/vdo1.mp4' // Это путь относительно /public, если что
@@ -140,6 +141,19 @@ watch(y, async (val) => {
 </script>
 
 <style lang="scss" scoped>
+
+._anim-item{
+  opacity: 0;
+  transform: translateX(120%)scaleX(0);
+}
+
+._anim-item._active {
+  transform: translateX(0%)scaleX(1);
+  opacity: 1;
+}
+
+
+
 #bg-vdo {
   width: 100vw;
   height: 100vh;
@@ -166,4 +180,5 @@ watch(y, async (val) => {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 </style>

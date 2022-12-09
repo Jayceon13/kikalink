@@ -20,7 +20,7 @@
 </template>
 
 
-<script setup type="text/javascript">
+<script setup>
 import BlockBurger from "components/burgerMenu";
 import { defineComponent, ref, onMounted } from "vue";
 import { debounce } from 'quasar'
@@ -28,7 +28,6 @@ import BlockPage from "pages/IndexPage";
 import { state } from 'src/store/simplestore'
 import PreloaderMenu from "components/PreloaderMenu";
 
-// let a =
 
 
 const onScrollHandler = (pos) => {
@@ -36,7 +35,7 @@ const onScrollHandler = (pos) => {
 }
 // Дебонсим событие скролла (в мс). Чем меньше - тем плавнее, но тогда
 // сверх-нагрузка на браузер/комп. Надо тестить значение непосредственно на устройствах
-const onScroll = debounce(onScrollHandler, 10)
+const onScroll = debounce(onScrollHandler, 100)
 
 const showBurgerMenu = ref(false)
 
