@@ -111,13 +111,13 @@ let vdo = null
 let page = null
 
 // Конвертим процент скролла страницы в процент относительно продолжительности видео
-const relToTime = (rel) => vdo.duration / 100 * rel
+const relToTime = (rel) => vdo.duration / 1000 * rel
 
 // Конвертим значение скролла сверху страницы в процент от всей страницы
 const scrollToRel = (y) => {
   // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
   const absHeight = page.clientHeight - document.documentElement.clientHeight
-  const value = Math.ceil(y / absHeight * 100)
+  const value = Math.ceil(y / absHeight * 1000)
   console.warn('Скролл: %s % / Y=%s, ABS=%s', value, y, absHeight) // Debug
   return value
 }
