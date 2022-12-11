@@ -107,6 +107,15 @@
                  style="padding: 10px 0px"
             /></span></q-btn>
         </div>
+        <q-btn
+          @click="$router.push('/')"
+          class="my-btn-services"
+        >
+          <img src="~/src/assets/russia.svg"
+               style="padding: 10px 0px"
+          />
+        </q-btn
+        >
       </div>
     </div>
   </div>
