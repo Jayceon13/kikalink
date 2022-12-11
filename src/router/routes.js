@@ -1,11 +1,10 @@
 const routes = [
   {
-    path: "/ru",
+    path: "/",
     component: () => import("layouts/MenuLayout.vue"),
     children: [
-      { path: "/ru", component: () => import("pages/IndexPage.vue") },
+      { path: "", component: () => import("pages/IndexPage.vue") },
       { path: "/services", component: () => import("pages/ServicesPage.vue") },
-      { path: "/about", component: () => import("pages/AboutPage.vue") },
       {
         path: "/lashesbrow",
         component: () => import("src/pages/LashesBrowPage.vue"),
@@ -23,6 +22,14 @@ const routes = [
     path: "/:catchAll(.*)*",
     component: () => import("pages/ErrorNotFound.vue"),
   },
+  {
+    path: "/eng",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/eng", component: () => import("pages/IndexPageEng.vue")
+      },]
+  }
 ];
 
 export default routes;

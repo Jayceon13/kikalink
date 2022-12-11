@@ -2,11 +2,14 @@
   <q-layout view="hHh lpR fFf" style="font-size: 10px">
     <preloader-menu/>
     <header class="bg-primary text-white" style="position: absolute; top: 0; width: 100%; height: 50px; z-index: 2; display: flex; justify-content: flex-end" >
-      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
-      <div class="hamburger-box">
-        <div class="hamburger-inner"></div>
-      </div>
-      </div>
+        <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <div class="change-language">
+          <div class="button-language" style="width: 20px; margin-right: 20px"><img src="~assets/language.svg"></div>
+        </div>
     </header>
     <div class="menu" v-scroll style="position: absolute; min-height: 100%">
       <block-burger v-model:show="showBurgerMenu"></block-burger>

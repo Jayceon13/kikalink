@@ -1,9 +1,9 @@
-import BlockBtns from "components/BlockBtns.vue";
+import BurgerMenuEng from "components/burgerMenuEng.vue";
 import BurgerMenu from "components/burgerMenu";
 import PreloaderMenu from "components/PreloaderMenu"
 
 export default {
-  BlockBtns,
+  BurgerMenuEng,
   BurgerMenu,
   PreloaderMenu,
 };

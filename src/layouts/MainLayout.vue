@@ -1,116 +1,126 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn-menu
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title>
-          Kika makeup
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
-
-    <q-page-container>
-      <router-view />
-    </q-page-container>
+  <q-layout view="hHh lpR fFf" style="font-size: 10px">
+    <preloader-menu/>
+    <header class="bg-primary text-white" style="position: absolute; top: 0; width: 100%; height: 50px; z-index: 2; display: flex; justify-content: flex-end" >
+      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </header>
+    <div class="menu" v-scroll style="position: absolute; min-height: 100%">
+      <block-burger-eng v-model:show="showBurgerMenu"></block-burger-eng>
+    </div>
+    <div class="page">
+      <q-page-container v-scroll="onScroll" id="page-container">
+        <router-view />
+      </q-page-container>
+    </div>
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref, onMounted } from 'vue'
-import EssentialLink from 'components/EssentialLink.vue'
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
+<script setup>
+import BlockBurgerEng from "components/burgerMenuEng";
+import { defineComponent, ref, onMounted } from "vue";
+import { debounce } from 'quasar'
+import BlockPage from "pages/IndexPage";
+import { state } from 'src/store/simplestore'
+import PreloaderMenu from "components/PreloaderMenu";
 
-export default defineComponent({
-  name: 'MainLayout',
 
-  components: {
-    EssentialLink
-  },
 
-  setup () {
-    const leftDrawerOpen = ref(false)
+const onScrollHandler = (pos) => {
+  state.scrollY = pos
+}
+// Дебонсим событие скролла (в мс). Чем меньше - тем плавнее, но тогда
+// сверх-нагрузка на браузер/комп. Надо тестить значение непосредственно на устройствах
+const onScroll = debounce(onScrollHandler, 1)
 
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
+const showBurgerMenu = ref(false)
+
+const blockBurgerMenu = () => {
+  showBurgerMenu.value = !showBurgerMenu.value;
+
+}
+
 </script>
+
+<style lang="scss">
+
+.hamburger {
+  position: fixed;
+  margin: 10px 10px 0 0;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  overflow: visible; }
+.hamburger:hover {
+  opacity: 0.7; }
+.hamburger.is-active:hover {
+  opacity: 0.7; }
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #ffffff; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; }
+.hamburger-inner::before {
+  top: -10px; }
+.hamburger-inner::after {
+  bottom: -10px; }
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease; }
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s; }
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0; }
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s; }
+
+.my-btn-contact {
+  margin-top: auto;
+}
+
+</style>
