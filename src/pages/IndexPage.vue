@@ -5,6 +5,8 @@
         <source :src="vdoSrc" type="video/mp4">
       </video>
       <img
+        data-aos="zoom-in"
+        data-aos-duration="3000"
         class="logo"
         alt="KIKA PRO MAKEUP"
         src="~assets/KIKAPROMAKE.svg"
@@ -15,7 +17,8 @@
       >
         <div class="main-page" style="color: white; margin: 20px">
           <div id="_anim-item" :class="animOnScroll ? 'about-menu': 'about-menu _active'">
-          <h5>ОБО МНЕ</h5>
+          <h5 data-aos="fade-up-right"
+              data-aos-duration="3000">ОБО МНЕ</h5>
           </div>
           <br>
           <br>
@@ -34,6 +37,11 @@
           <br>
           <br>
           <div class="service-menu">
+            <div
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              class="service-paragraph"
+              style="text-align: end">
           <h5>УСЛУГИ</h5>
             <br>
             <br>
@@ -51,7 +59,10 @@
             <br>
             <br>
             <br>
-          <h5>АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h5>
+          </div>
+          <h5 data-aos="fade-up-right"
+              data-aos-duration="3000"
+              >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h5>
             <br>
             <br>
             <br>
@@ -68,7 +79,11 @@
             <br>
             <br>
             <br>
-          <h5>ПРОРЕЖИВАНИЕ</h5>
+          <h5
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
+            style="text-align: end"
+          >ПРОРЕЖИВАНИЕ</h5>
             <br>
             <br>
             <br>
@@ -85,11 +100,26 @@
             <br>
             <br>
             <br>
-          <h5>ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
-          <h5>ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
-          <h5>ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
-          <h5>ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
-          <h5>ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
+          <h5
+            data-aos="fade-up-right"
+            data-aos-duration="3000"
+            >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
+          <h5
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
+            style="text-align: end"
+          >ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
+          <h5
+            data-aos="fade-up-right"
+            data-aos-duration="3000"
+          >ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
+          <h5
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
+            style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
+          <h5
+            data-aos="fade-up-right"
+            data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
           </div>
         </div>
       </transition>
@@ -101,6 +131,7 @@
 <script setup>
 import {computed, onMounted, watch} from "vue";
 import {state} from "src/store/simplestore";
+
 
 
 const vdoPoster = 'https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl' // Переложи обложку локально, рядом с видео
