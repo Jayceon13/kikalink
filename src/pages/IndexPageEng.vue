@@ -98,7 +98,6 @@
             <br>
             <br>
             <br>
-            <br>
             <h5
               data-aos="fade-up-right"
               data-aos-duration="3000"
@@ -143,7 +142,7 @@ let vdo = null
 let page = null
 
 // Конвертим процент скролла страницы в процент относительно продолжительности видео
-const relToTime = (rel) => vdo.duration / 1000 * rel
+const relToTime = (rel) => vdo.duration /4000 * rel
 
 // Конвертим значение скролла сверху страницы в процент от всей страницы
 const scrollToRel = (y) => {
