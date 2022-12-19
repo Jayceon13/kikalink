@@ -19,23 +19,9 @@
           <div id="_anim-item" :class="animOnScroll ? 'about-menu': 'about-menu _active'">
             <h5 data-aos="fade-up-right"
                 data-aos-duration="3000">ABOUT ME</h5>
+            <p></p>
           </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+
           <div class="service-menu">
             <div
               data-aos="fade-up-left"

@@ -107,15 +107,25 @@
                  style="padding: 10px 0px"
             /></span></q-btn>
         </div>
-        <q-btn
-          @click="$router.push('/')"
-          class="my-btn-services"
-        >
-          <img src="~/src/assets/russia.svg"
-               style="padding: 10px 0px"
-          />
-        </q-btn
-        >
+        <div class="change-language">
+          <q-btn
+            class="my-btn-language-eng"
+          >
+            <img src="~/src/assets/united-kingdom.svg"
+                 style="padding: 10px 0px"
+            />
+          </q-btn
+          >
+          <q-btn
+            @click="$router.push('/')"
+            class="my-btn-language"
+          >
+            <img src="~/src/assets/russia.svg"
+                 style="padding: 10px 0px"
+            />
+          </q-btn
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -153,6 +163,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.change-language{
+  flex-direction: row;
+  width: 100px;
+  height: 30px;
+}
+.my-btn-language{
+  width: 40px;
+  height: 20px;
+}
 .my-btn {
   height: 100vh;
   width: 100vw;
