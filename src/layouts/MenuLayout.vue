@@ -35,7 +35,7 @@ const onScrollHandler = (pos) => {
 }
 // Дебонсим событие скролла (в мс). Чем меньше - тем плавнее, но тогда
 // сверх-нагрузка на браузер/комп. Надо тестить значение непосредственно на устройствах
-const onScroll = debounce(onScrollHandler, 1)
+const onScroll = debounce(onScrollHandler, 5)
 
 const showBurgerMenu = ref(false)
 
