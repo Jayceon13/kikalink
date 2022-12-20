@@ -41,8 +41,16 @@ const showBurgerMenu = ref(false)
 
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
+  if(showBurgerMenu.value) {
+    document.body.style.overflow = 'hidden'
+  }
+  else {
+    document.body.style.overflow = 'visible';}
+};
 
-}
+
+
+
 
 </script>
 
