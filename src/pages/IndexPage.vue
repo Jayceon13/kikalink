@@ -17,9 +17,43 @@
           <h5 data-aos="fade-up-right"
               data-aos-duration="3000">ОБО МНЕ</h5>
             <p data-aos="fade-up-right"
-               data-aos-duration="3000">Меня зовут Кристина ,
-              Уже 6 лет я создаю красоту для других людей . КОМЕРЧЕСКИЙ И НЕКОМЕРЧЕСКИЙ макияж мое все . Создаю уникальные образы для сьемок музыкальных клипов и рекламы . С моим макияжем ты будешь неотразима ❤️
+               data-aos-duration="3000" style="max-width: 300px">Меня зовут Кристина ,
+              Уже 6 лет я создаю красоту для других людей .
+              КОМЕРЧЕСКИЙ И НЕКОМЕРЧЕСКИЙ макияж мое все .
+              Создаю уникальные образы для сьемок музыкальных клипов и рекламы .
+              С моим макияжем ты будешь неотразима ❤️
               Создаю рекламу для бьюти брендов ⭐️</p>
+            <h6>МОИ РАБОТЫ</h6>
+
+          </div>
+          <div class="q-pa-md">
+            <q-carousel
+              data-aos="fade-up-right"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+              :autoplay="autoplay"
+              arrows
+              transition-prev="slide-right"
+              transition-next="slide-left"
+              @mouseenter="autoplay = false"
+              @mouseleave="autoplay = true"
+              draggable="false"
+              navigation-active-icon:-addimg
+              style="max-width: 300px"
+            >
+              <q-carousel-slide :name="1" img-src="assets/makeup1.jpg" />
+              <q-carousel-slide :name="2" img-src="assets/makeup2.jpg" />
+              <q-carousel-slide :name="3" img-src="assets/makeup3.jpg" />
+              <q-carousel-slide :name="4" img-src="assets/makeup4.jpg" />
+              <q-carousel-slide :name="5" img-src="assets/makeup5.jpg" />
+              <q-carousel-slide :name="6" img-src="assets/makeup6.jpg" />
+              <q-carousel-slide :name="7" img-src="assets/makeup7.jpg" />
+              <q-carousel-slide :name="8" img-src="assets/makeup8.jpg" />
+            </q-carousel>
           </div>
           <div class="service-menu">
             <div
@@ -28,67 +62,63 @@
               class="service-paragraph"
               style="text-align: end">
           <h5>УСЛУГИ</h5>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
           </div>
-          <h5 data-aos="fade-up-right"
+          <h6 data-aos="fade-up-right"
               data-aos-duration="3000"
-              >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h5>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          <h5
+              >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h6>
+            <q-carousel
+              data-aos="fade-up-right"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+            </q-carousel>
+
+            <h6
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
-          >ПРОРЕЖИВАНИЕ</h5>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+          >ПРОРЕЖИВАНИЕ</h6>
+            <p data-aos="fade-up-left"
+               data-aos-duration="3000">Описание услуги :
+
+              Прореживание – это способ коррекции бровей,
+              при котором удаляются жесткие, длинные или закрученные волоски,
+              а также волоски в местах их большого скопления. Такой метод имеет
+              множество преимуществ и может кардинально изменить весь процесс коррекции.️</p>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000"
             >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
+            <p data-aos="fade-up-right"
+               data-aos-duration="3000">Описание услуги :
+
+              Долговременная укладка бровей – это нанесение специального состава,
+              который фиксирует волоски в нужном направлении.
+              Раньше долговременную укладку бровей делали составами,
+              которые использовались для ламинирования ресниц. Именно поэтому
+              есть второе название процедуры – ламинирование бровей
+              Подходит для тех у кого мало бровей , с помощью процедуры
+              волоски становятся плотнее и их становится больше .
+              Так же подходит для тех у кого жесткие не послушные брови ,
+              которые невозможно уложить фиксирующим средством .
+              Осветление бровей
+              Процедура подходит тем у кого слишком темный волосок или тем кому
+              перетемнивший волос .
+              Ламинирование ресниц
+              Если ваши реснички смотрят вниз и вы их не видите это процедура
+              отлично подойдёт для вас . С помощью ламинирования мы создаем изгиб ресницам , уплотняем волосок . Эффект наращенных ресниц .
+              Окрашивание/коррекция бровей(хна/краска)
+              Протеиновое восстановление ресниц/бровей
+              Полностью не химические составы питают и ухаживают за вашими
+              бровями и ресницами . Восстанавливающая процедура после неудачного ламинирования . Подходит так же для тех кто хочет более натуральный эффект без вреда для волос . ️</p>
           <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
@@ -114,11 +144,13 @@
 </template>
 
 <script setup>
-import {computed, onMounted, watch} from "vue";
+import {computed, onMounted, watch, ref} from "vue";
 import {state} from "src/store/simplestore";
 
 
-
+const slide = ref(1)
+const autoplay = ref(true)
+const fullscreen = ref(false)
 const vdoPoster = '/assets/poster.png' // Переложи обложку локально, рядом с видео
 const vdoSrc = '/assets/vdo1.mp4' // Это путь относительно /public, если что
 
@@ -153,9 +185,13 @@ watch(y, async (val) => {
   }
 );
 
+
 </script>
 
 <style lang="scss" scoped>
+q-carousel-slide {
+  max-width: 300px;
+}
 
 ._anim-item{
   opacity: 0;

@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf" style="font-size: 10px">
+  <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
     <header class="header-nav">
       <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
@@ -8,7 +8,7 @@
         </div>
       </div>
     </header>
-    <div class="menu" v-scroll style="position: fixed;z-index: 10; min-height: 100%">
+    <div :class="!showBurgerMenu ?'menu': 'menu active'" v-scroll style="position: fixed;z-index: 10; min-height: 100%">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
     <div class="page">
@@ -35,7 +35,7 @@ const onScrollHandler = (pos) => {
 }
 // Дебонсим событие скролла (в мс). Чем меньше - тем плавнее, но тогда
 // сверх-нагрузка на браузер/комп. Надо тестить значение непосредственно на устройствах
-const onScroll = debounce(onScrollHandler, 5)
+const onScroll = debounce(onScrollHandler, 15)
 
 const showBurgerMenu = ref(false)
 
@@ -138,6 +138,7 @@ const blockBurgerMenu = () => {
 .my-btn-contact {
   margin-top: auto;
 }
+
 
 </style>
 

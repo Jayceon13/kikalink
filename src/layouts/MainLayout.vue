@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf" style="font-size: 10px">
+  <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
     <header class="header-nav" style="position: fixed; top: 0; width: 100%; height: 50px; z-index: 9999; display: flex; justify-content: flex-end" >
       <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
