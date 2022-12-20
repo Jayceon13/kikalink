@@ -163,11 +163,22 @@ export default {
   align-items: center;
 }
 
-.burgerMenu {
+.burgerMenu{
   background: black;
   z-index: 1;
   height: 100%;
+  animation: slide-down 1s ease-in forwards;
+
 }
+@keyframes slide-down {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
 .q-btn {
   height: auto;
   margin: 6px;
