@@ -2,7 +2,7 @@
   <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
     <header class="header-nav">
-      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
+      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click.stop="blockBurgerMenu">
         <div class="hamburger-box">
           <div class="hamburger-inner"></div>
         </div>
@@ -38,6 +38,7 @@ const onScrollHandler = (pos) => {
 const onScroll = debounce(onScrollHandler, 15)
 
 const showBurgerMenu = ref(false)
+
 
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
