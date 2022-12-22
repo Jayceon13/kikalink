@@ -104,16 +104,9 @@
                  style="padding: 10px 0px"
             /></span></q-btn>
         </div>
-        <q-btn
-          @click="$router.push('/eng')"
-          class="my-btn-services"
-        >
-          <img src="~/src/assets/united-kingdom.svg"
-               style="padding: 10px 0px"
-          />
-        </q-btn
-        >
+
       </div>
+
     </div>
   </div>
 </template>
@@ -181,6 +174,7 @@ export default {
 
 .q-btn {
   height: auto;
+  width: auto;
   margin: 6px;
 }
 

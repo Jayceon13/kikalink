@@ -58,18 +58,41 @@
               <q-carousel-slide :name="12" img-src="assets/makeup12.jpg" />
               <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
             </q-carousel>
+
           </div>
           <div class="service-menu">
             <div
-              data-aos="fade-up-left"
-              data-aos-duration="3000"
+              data-aos="zoom-in"
+              data-aos-duration="5000"
               class="service-paragraph"
-              style="text-align: end">
-          <h5>УСЛУГИ</h5>
+              style="text-align: center">
+          <h5 style="font-size: 28px">УСЛУГИ</h5>
           </div>
           <h6 data-aos="fade-up-right"
               data-aos-duration="3000"
               >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h6>
+
+            <q-carousel
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+
+            <h6
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
+            style="text-align: end"
+          >ПРОРЕЖИВАНИЕ</h6>
             <q-carousel
               data-aos="fade-up-right"
               data-aos-duration="3000"
@@ -83,13 +106,9 @@
               <q-carousel-slide :name="2" img-src="" />
               <q-carousel-slide :name="3" img-src="" />
               <q-carousel-slide :name="4" img-src="" />
+
             </q-carousel>
 
-            <h6
-            data-aos="fade-up-left"
-            data-aos-duration="3000"
-            style="text-align: end"
-          >ПРОРЕЖИВАНИЕ</h6>
             <p data-aos="fade-up-left"
                data-aos-duration="3000">Описание услуги :
 
@@ -101,6 +120,22 @@
             data-aos="fade-up-right"
             data-aos-duration="3000"
             >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
+            <q-carousel
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
 
@@ -128,17 +163,120 @@
             data-aos-duration="3000"
             style="text-align: end"
           >ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
+            <q-carousel
+              data-aos="fade-up-right"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+
+            <p data-aos="fade-up-right"
+               data-aos-duration="3000">Описание услуги :
+
+              Осветление - это частичное или полное удаление искусственного или натурального пигмента,
+              находящегося в структуре волоска, с помощью специальных средств.
+              Осветление бровей изначально придумано для того, чтобы цвет волос резонировал с цветом волосков бровей.
+              На сегодняшний же день данной услугой пользуются многие девушки и молодые люди,
+              которые хотят сделать образ визуально легче.
+              ️</p>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
+            <q-carousel
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+            <p data-aos="fade-up-right"
+               data-aos-duration="3000">Описание услуги :
+
+              Абсолютно безопасная и современная технология ухода за ресничками,
+              позволяющая сделать взгляд более выразительным. С помощью специальных
+              растворов происходит воздействие на ресницы, в результате чего они
+              становятся гладкими, естественно утолщенными и удлиненными.
+              Ламинирование ресниц - процедура безопасная и уходовая,
+              поэтому в принципе подходит всем. Особенно ламинирование
+              украсит глаза тех девушек, у которых не очень яркие и густые собственные
+              реснички и которые не хотят пользоваться нарощенными ресницами, желая
+              создать максимально естественный, но привлекательный образ.️</p>
           <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
+            <q-carousel
+              data-aos="fade-up-right"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+            <p data-aos="fade-up-right"
+               data-aos-duration="3000">Описание услуги :
+
+              Окрашивание хной для бровей — это процедура, которая придает бровям желаемый тон.
+              Во время окрашивания цвет приобретают не только волоски, но и кожа под ними.
+              Это позволяет добиться эффекта «тени», иначе, «пудрового» эффекта.
+              Брови выглядят натурально, но более ярко, объемно и выразительно.
+
+              Преимущества долговременного окрашивания с помощью хны в том,
+              что после него нет необходимости ежедневно уделять значительное время макияжу бровей.
+              Из-за схожести визуального эффекта окрашивание хной также называют биотатуажем.
+              Кроме того, с помощью этой процедуры можно скорректировать форму бровей — как и при помощи перманентного макияжа.️</p>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
+            <q-carousel
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              swipeable
+              animated
+              v-model="slide"
+              thumbnails
+              infinite
+            >
+              <q-carousel-slide :name="1" img-src="" />
+              <q-carousel-slide :name="2" img-src="" />
+              <q-carousel-slide :name="3" img-src="" />
+              <q-carousel-slide :name="4" img-src="" />
+
+            </q-carousel>
+            <p data-aos="fade-up-right"
+               data-aos-duration="3000">Описание услуги :
+
+              Протеиновое восстановление – процедура нанесения на брови специальных средств,
+              которые содержат в составе витамины, минералы и белки. Такие средства насыщают волоски полезными микроэлементами,
+              ускоряют рост и укрепляют их, воздействуя на клеточном уровне.
+              Процедура даёт возможность вернуть им природную красоту после использования низкокачественной косметики,
+              частого выщипывания, вредного питания, стресса или при отсутствии должного ухода.
+              Также потребность в процедуре возникает после неудачного татуажа, ожогов, химиотерапии.️</p>
           </div>
         </div>
 
@@ -211,7 +349,12 @@ q-carousel-slide {
   transform: translateX(0%)scaleX(1);
   opacity: 1;
 }
-
+.price {
+  width: 220px;
+  font-size: 18px;
+  border: 2px solid #fd0202;
+  border-radius: 4px;
+}
 
 
 #bg-vdo {

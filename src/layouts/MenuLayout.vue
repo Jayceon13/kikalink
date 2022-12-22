@@ -2,6 +2,14 @@
   <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
     <header class="header-nav">
+      <q-btn
+        @click="$router.push('/eng')"
+        class="my-btn-services"
+        style="top: 12px; left: 20px; position: absolute"
+      >
+        <span style="color: white">ENG</span>
+      </q-btn
+      >
       <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click.stop="blockBurgerMenu">
         <div class="hamburger-box">
           <div class="hamburger-inner"></div>
@@ -138,6 +146,9 @@ const blockBurgerMenu = () => {
 
 .my-btn-contact {
   margin-top: auto;
+}
+.q-btn:before {
+  box-shadow: none;
 }
 
 
