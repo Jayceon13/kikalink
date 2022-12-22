@@ -1,7 +1,7 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <video id="bg-vdo" playsinline muted :poster="vdoPoster">
+      <video id="bg-vdo" muted="muted" playsinline  :poster="vdoPoster">
         <source :src="vdoSrc" type="video/mp4">
       </video>
       <img
@@ -33,7 +33,6 @@
               swipeable
               animated
               v-model="slide"
-              thumbnails
               infinite
               :autoplay="autoplay"
               arrows
@@ -53,6 +52,11 @@
               <q-carousel-slide :name="6" img-src="assets/makeup6.jpg" />
               <q-carousel-slide :name="7" img-src="assets/makeup7.jpg" />
               <q-carousel-slide :name="8" img-src="assets/makeup8.jpg" />
+              <q-carousel-slide :name="9" img-src="assets/makeup9.jpg" />
+              <q-carousel-slide :name="10" img-src="assets/makeup10.jpg" />
+              <q-carousel-slide :name="11" img-src="assets/makeup11.jpg" />
+              <q-carousel-slide :name="12" img-src="assets/makeup12.jpg" />
+              <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
             </q-carousel>
           </div>
           <div class="service-menu">
@@ -153,6 +157,7 @@ const autoplay = ref(true)
 const fullscreen = ref(false)
 const vdoPoster = '/assets/poster.png' // Переложи обложку локально, рядом с видео
 const vdoSrc = '/assets/vdo1.mp4' // Это путь относительно /public, если что
+
 
 // Определяем переменные, а значения ставим в mounted, т.к. только там доступен DOM
 let vdo = null

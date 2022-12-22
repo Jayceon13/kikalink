@@ -1,61 +1,77 @@
 <template>
-  <div class="q-pa-md">
-    <q-carousel swipeable animated v-model="slide" thumbnails infinite>
-      <q-carousel-slide
-        :name="1"
-        img-src="https://drive.google.com/uc?export=view&id=1RbdLYOJeRH6KI9MHYEWr2PDLIBSZDgDK"
-      />
-      <q-carousel-slide
-        :name="2"
-        img-src="https://drive.google.com/uc?export=view&id=10y9CfOVHPG4HxsV9hMDNkz-lZv1ab77J"
-      />
-      <q-carousel-slide
-        :name="3"
-        img-src="https://drive.google.com/uc?export=view&id=13l2lzY5PWELJtwUCqSyRtoYwb7lT9D2Y"
-      />
-      <q-carousel-slide
-        :name="4"
-        img-src="https://drive.google.com/uc?export=view&id=1mfzb54t_vkJNwrM1KTBxHq5duHjZouwh"
-      />
-      <q-carousel-slide
-        :name="5"
-        img-src="https://drive.google.com/uc?export=view&id=1K1PtvLbPwdo26FAU6JIJc7n4kN_PISaM"
-      />
-      <q-carousel-slide
-        :name="6"
-        img-src="https://drive.google.com/uc?export=view&id=10b7Jg6k9dEzvOheV3L_FVjJOLaH_44zI"
-      />
-      <q-carousel-slide
-        :name="7"
-        img-src="https://drive.google.com/uc?export=view&id=1O4DV3ObD986hh1M_laOalkYZF1q9XiCx"
-      />
-    </q-carousel>
-  </div>
+      <img id="bg-img" :src="imgSrc" alt="MDN">
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
+  <h1>1</h1>
 </template>
 
-<script>
-import { ref } from "vue";
-export default {
-  setup() {
-    return {
-      slide: ref(1),
-    };
-  },
-};
+<script setup>
+
+import {computed, onMounted, watch} from "vue";
+import {state} from "src/store/simplestore";
+
+const vdoPoster = 'https://drive.google.com/uc?export=view&id=1ZnY9WNndTb7ZdoRMuM8FzhKNazvToJpl' // Переложи обложку локально, рядом с видео
+const imgSrc = '/assets/Group.svg' // Это путь относительно /public, если что
+
+// Определяем переменные, а значения ставим в mounted, т.к. только там доступен DOM
+let vdo = null
+let page = null
+
+// Конвертим процент скролла страницы в процент относительно продолжительности видео
+const relToTime = (rel) => vdo.duration /4000 * rel
+
+// Конвертим значение скролла сверху страницы в процент от всей страницы
+const scrollToRel = (y) => {
+  // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
+  const absHeight = page.clientHeight - document.documentElement.clientHeight
+  const value = Math.ceil(y / absHeight * 1000)
+  console.warn('Скролл: %s % / Y=%s, ABS=%s', value, y, absHeight) // Debug
+  return value
+}
+
+// Получаем DOM элементы после монтажа компонента
+onMounted(() => {
+  vdo = document.getElementById('bg-img')
+  page = document.getElementById('page-container')
+})
+
+// Получаем реактивное значение скролла Y из общего хранилища
+const y = computed(() => state.scrollY)
+
+// Отслеживаем значение Y и на каждом изменении "мотаем" видео на нужный процент
+watch(y, async (val) => {
+    const rel = scrollToRel(val)
+    vdo.currentTime = relToTime(rel)
+  }
+);
+
 </script>
 
 <style lang="scss" scoped>
-.photo-window {
+img {
+  position: fixed;
+  width: 100vw;
+  object-fit: cover;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  display: flex;
-}
-
-.q-pa-md {
-  margin: auto;
+  z-index: -1;
 }
 </style>
