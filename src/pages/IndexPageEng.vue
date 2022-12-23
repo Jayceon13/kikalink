@@ -32,11 +32,10 @@
           I create unique images for filming music videos and commercials.
           With my makeup you will be irresistible ❤️
           I create ads for beauty brands ⭐️</p>
+        <div class="main-left" style="width: 100%; text-align: -webkit-right">
         <h6>MY WORKS</h6>
-
-        <div class="q-pa-md">
           <q-carousel
-            data-aos="fade-up-right"
+            data-aos="fade-up-left"
             data-aos-duration="3000"
             swipeable
             animated
@@ -85,7 +84,7 @@
                src="assets/lashes6.jpg"
                alt=""
                style="max-width: 340px">
-
+          <div class="main-left" style="width: 100%; text-align: -webkit-right">
           <h6
             data-aos="fade-up-left"
             data-aos-duration="3000"
@@ -99,7 +98,8 @@
             in which stiff, long or twisted hairs are removed,
             as well as hairs in places of their large accumulation. Such a method has
             many benefits and can dramatically change the entire correction process.️</p>
-          <h5
+          </div>
+            <h5
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >LONG-TERM EYEBROW STYLING</h5>
@@ -132,18 +132,19 @@
             Completely non-chemical formulations nourish and care for your
             eyebrows and eyelashes. Restorative procedure after unsuccessful lamination. Also suitable for those who want a more natural effect without harm to the hair.
             ️</p>
+          <div class="main-left" style="width: 100%; text-align: -webkit-right">
           <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
           >EYEBROW LIGHTENING</h5>
-          <img data-aos="fade-up-right"
+          <img data-aos="fade-up-left"
                data-aos-duration="3000"
                src="assets/lashes9.jpg"
                alt=""
                style="max-width: 340px">
 
-          <p data-aos="fade-up-right"
+          <p data-aos="fade-up-left"
              data-aos-duration="3000">Service description:
 
             Lightening is the partial or complete removal of artificial or natural pigment,
@@ -152,6 +153,7 @@
             Today, many girls and young people use this service,
             who want to make the image visually lighter.
             ️</p>
+          </div>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000"
@@ -174,16 +176,17 @@
             will decorate the eyes of those girls who do not have very bright and thick own
             eyelashes and who do not want to use eyelash extensions, wanting
             create the most natural yet attractive look.️</p>
+          <div class="main-left" style="width: 100%; text-align: -webkit-right">
           <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</h5>
-          <img data-aos="fade-up-right"
+          <img data-aos="fade-up-left"
                data-aos-duration="3000"
                src="assets/lashes8.jpg"
                alt=""
                style="max-width: 340px">
-          <p data-aos="fade-up-right"
+          <p data-aos="fade-up-left"
              data-aos-duration="3000">Service description:
 
             Eyebrow henna is a procedure that gives the eyebrows the desired tone.
@@ -196,6 +199,7 @@
             Due to the similarity of the visual effect, henna staining is also called biotattoo.
             In addition, with the help of this procedure, you can correct the shape of the eyebrows - just like with permanent makeup
             .️</p>
+            </div>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000">PROTEIN EYELASH/EYEBROW REPAIR</h5>

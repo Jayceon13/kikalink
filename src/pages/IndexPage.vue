@@ -32,11 +32,15 @@
               Создаю уникальные образы для сьемок музыкальных клипов и рекламы .
               С моим макияжем ты будешь неотразима ❤️
               Создаю рекламу для бьюти брендов ⭐️</p>
-            <h6>МОИ РАБОТЫ</h6>
+          <div class="main-left" style="width: 100%; text-align: -webkit-right">
+            <h6
+              data-aos="fade-up-left"
+              data-aos-duration="3000"
+              >МОИ РАБОТЫ</h6>
 
-          <div class="q-pa-md">
+          <div class="q-pa-md" style="text-align: -webkit-right">
             <q-carousel
-              data-aos="fade-up-right"
+              data-aos="fade-up-left"
               data-aos-duration="3000"
               swipeable
               animated
@@ -50,7 +54,7 @@
               @mouseleave="autoplay = true"
               draggable="false"
               navigation-active-icon:-addimg
-              style="max-width: 340px"
+              style="max-width: 340px; padding: 0;"
             >
               <q-carousel-slide :name="1" img-src="assets/makeup1.jpg" />
               <q-carousel-slide :name="2" img-src="assets/makeup2.jpg" />
@@ -66,9 +70,10 @@
               <q-carousel-slide :name="12" img-src="assets/makeup12.jpg" />
               <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
             </q-carousel>
-
+            </div>
           </div>
           <div class="service-menu">
+
             <div
               data-aos="zoom-in"
               data-aos-duration="5000"
@@ -85,7 +90,7 @@
                  src="assets/lashes6.jpg"
                  alt=""
                  style="max-width: 340px">
-
+             <div class="main-left" style="width: 100%; text-align: -webkit-right">
             <h6
             data-aos="fade-up-left"
             data-aos-duration="3000"
@@ -99,6 +104,7 @@
               при котором удаляются жесткие, длинные или закрученные волоски,
               а также волоски в местах их большого скопления. Такой метод имеет
               множество преимуществ и может кардинально изменить весь процесс коррекции.️</p>
+             </div>
           <h5
             href="scrolltest"
             data-aos="fade-up-right"
@@ -132,18 +138,20 @@
               Протеиновое восстановление ресниц/бровей
               Полностью не химические составы питают и ухаживают за вашими
               бровями и ресницами . Восстанавливающая процедура после неудачного ламинирования . Подходит так же для тех кто хочет более натуральный эффект без вреда для волос . ️</p>
-          <h5
+
+            <div class="main-left" style="width: 100%; text-align: -webkit-right">
+            <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
           >ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
-            <img data-aos="fade-up-right"
+            <img data-aos="fade-up-left"
                  data-aos-duration="3000"
                  src="assets/lashes9.jpg"
                  alt=""
                  style="max-width: 340px">
 
-            <p data-aos="fade-up-right"
+            <p data-aos="fade-up-left"
                data-aos-duration="3000">Описание услуги :
 
               Осветление - это частичное или полное удаление искусственного или натурального пигмента,
@@ -152,6 +160,7 @@
               На сегодняшний же день данной услугой пользуются многие девушки и молодые люди,
               которые хотят сделать образ визуально легче.
               ️</p>
+              </div>
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000"
@@ -174,16 +183,17 @@
               украсит глаза тех девушек, у которых не очень яркие и густые собственные
               реснички и которые не хотят пользоваться нарощенными ресницами, желая
               создать максимально естественный, но привлекательный образ.️</p>
+            <div class="main-left" style="width: 100%; text-align: -webkit-right">
           <h5
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
-            <img data-aos="fade-up-right"
+            <img data-aos="fade-up-left"
                  data-aos-duration="3000"
                  src="assets/lashes8.jpg"
                  alt=""
                  style="max-width: 340px">
-            <p data-aos="fade-up-right"
+            <p data-aos="fade-up-left"
                data-aos-duration="3000">Описание услуги :
 
               Окрашивание хной для бровей — это процедура, которая придает бровям желаемый тон.
@@ -195,7 +205,9 @@
               что после него нет необходимости ежедневно уделять значительное время макияжу бровей.
               Из-за схожести визуального эффекта окрашивание хной также называют биотатуажем.
               Кроме того, с помощью этой процедуры можно скорректировать форму бровей — как и при помощи перманентного макияжа.️</p>
-          <h5
+            </div>
+
+              <h5
             data-aos="fade-up-right"
             data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
             <img data-aos="fade-up-right"

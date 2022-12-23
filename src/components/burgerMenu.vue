@@ -1,5 +1,5 @@
 <template>
-  <div @click.stop class="burgerMenu" v-if="show" style="position: absolute;">
+  <div class="burgerMenu" v-if="show" @click.stop="hideBlock" style="position: absolute;">
     <div @click.stop class="my-btn" style="display: flex; align-items: center">
       <img
         class="logo"
@@ -31,7 +31,7 @@
         >ПРОРЕЖИВАНИЕ</q-btn
         >
         <q-btn
-          v-scroll-to="'#scrolltest'"
+          @click.stop
           class="my-btn-services"
         >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</q-btn
         >
