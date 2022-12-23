@@ -1,7 +1,7 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <video id="bg-vdo" muted="muted" playsinline  :poster="vdoPoster">
+      <video id="bg-vdo" muted playsinline  :poster="vdoPoster">
         <source :src="vdoSrc" type="video/mp4">
       </video>
       <img
@@ -13,11 +13,20 @@
         style="width: 200px; height: 200px"
       />
         <div class="main-page" style="color: white; margin: 20px">
-          <div id="_anim-item">
+          <div class="title-items">
           <h5 data-aos="fade-up-right"
-              data-aos-duration="3000">ОБО МНЕ</h5>
+              data-aos-duration="3000" style="text-align: center; width: 150px; font-family: 'Bellota'; box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5);"
+          >
+            ОБО МНЕ
+          </h5>
+          </div>
+          <img data-aos="fade-up-right"
+               data-aos-duration="3000"
+               src="assets/about1.jpg"
+               alt=""
+               style="max-width: 340px">
             <p data-aos="fade-up-right"
-               data-aos-duration="3000" style="max-width: 300px">Меня зовут Кристина ,
+               data-aos-duration="3000">Меня зовут Кристина ,
               Уже 6 лет я создаю красоту для других людей .
               КОМЕРЧЕСКИЙ И НЕКОМЕРЧЕСКИЙ макияж мое все .
               Создаю уникальные образы для сьемок музыкальных клипов и рекламы .
@@ -25,7 +34,6 @@
               Создаю рекламу для бьюти брендов ⭐️</p>
             <h6>МОИ РАБОТЫ</h6>
 
-          </div>
           <div class="q-pa-md">
             <q-carousel
               data-aos="fade-up-right"
@@ -42,7 +50,7 @@
               @mouseleave="autoplay = true"
               draggable="false"
               navigation-active-icon:-addimg
-              style="max-width: 300px"
+              style="max-width: 340px"
             >
               <q-carousel-slide :name="1" img-src="assets/makeup1.jpg" />
               <q-carousel-slide :name="2" img-src="assets/makeup2.jpg" />
@@ -70,71 +78,37 @@
           </div>
           <h6 data-aos="fade-up-right"
               data-aos-duration="3000"
-              >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</h6>
+              ><a name="test">АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</a></h6>
 
-            <q-carousel
-              data-aos="fade-up-left"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes6.jpg"
+                 alt=""
+                 style="max-width: 340px">
 
             <h6
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
           >ПРОРЕЖИВАНИЕ</h6>
-            <q-carousel
-              data-aos="fade-up-right"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
 
             <p data-aos="fade-up-left"
-               data-aos-duration="3000">Описание услуги :
+               data-aos-duration="3000" style="text-align: end">Описание услуги :
 
               Прореживание – это способ коррекции бровей,
               при котором удаляются жесткие, длинные или закрученные волоски,
               а также волоски в местах их большого скопления. Такой метод имеет
               множество преимуществ и может кардинально изменить весь процесс коррекции.️</p>
           <h5
+            href="scrolltest"
             data-aos="fade-up-right"
             data-aos-duration="3000"
             >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
-            <q-carousel
-              data-aos="fade-up-left"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes7.jpg"
+                 alt=""
+                 style="max-width: 340px">
 
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
@@ -163,21 +137,11 @@
             data-aos-duration="3000"
             style="text-align: end"
           >ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
-            <q-carousel
-              data-aos="fade-up-right"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes9.jpg"
+                 alt=""
+                 style="max-width: 340px">
 
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
@@ -192,21 +156,12 @@
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
-            <q-carousel
-              data-aos="fade-up-left"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes3.jpg"
+                 alt=""
+                 style="max-width: 340px">
 
-            </q-carousel>
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
 
@@ -223,21 +178,11 @@
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
-            <q-carousel
-              data-aos="fade-up-right"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes8.jpg"
+                 alt=""
+                 style="max-width: 340px">
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
 
@@ -253,21 +198,11 @@
           <h5
             data-aos="fade-up-right"
             data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
-            <q-carousel
-              data-aos="fade-up-left"
-              data-aos-duration="3000"
-              swipeable
-              animated
-              v-model="slide"
-              thumbnails
-              infinite
-            >
-              <q-carousel-slide :name="1" img-src="" />
-              <q-carousel-slide :name="2" img-src="" />
-              <q-carousel-slide :name="3" img-src="" />
-              <q-carousel-slide :name="4" img-src="" />
-
-            </q-carousel>
+            <img data-aos="fade-up-right"
+                 data-aos-duration="3000"
+                 src="assets/lashes10.jpg"
+                 alt=""
+                 style="max-width: 340px">
             <p data-aos="fade-up-right"
                data-aos-duration="3000">Описание услуги :
 
@@ -292,7 +227,6 @@ import {state} from "src/store/simplestore";
 
 const slide = ref(1)
 const autoplay = ref(true)
-const fullscreen = ref(false)
 const vdoPoster = '/assets/poster.png' // Переложи обложку локально, рядом с видео
 const vdoSrc = '/assets/vdo1.mp4' // Это путь относительно /public, если что
 
@@ -309,6 +243,7 @@ const scrollToRel = (y) => {
   // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
   const absHeight = page.clientHeight - document.documentElement.clientHeight
   const value = Math.ceil(y / absHeight * 1000)
+  console.warn('Скролл: %s % / Y=%s, ABS=%s', value, y, absHeight)
   return value
 }
 
@@ -332,23 +267,17 @@ watch(y, async (val) => {
 </script>
 
 <style lang="scss" scoped>
-q-carousel-slide {
-  max-width: 300px;
+
+p{
+  max-width: 340px;
 }
 
-._anim-item{
-  opacity: 0;
-  transform: translateX(120%)scaleX(0);
+.title-items{
+  width: 100%;
+  text-align: -webkit-center;
 }
 
-._anim-item p{
-  width: 300px;
-}
 
-._anim-item._active {
-  transform: translateX(0%)scaleX(1);
-  opacity: 1;
-}
 .price {
   width: 220px;
   font-size: 18px;

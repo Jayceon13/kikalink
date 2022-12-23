@@ -107,25 +107,6 @@
                  style="padding: 10px 0px"
             /></span></q-btn>
         </div>
-        <div class="change-language">
-          <q-btn
-            class="my-btn-language-eng"
-          >
-            <img src="~/src/assets/united-kingdom.svg"
-                 style="padding: 10px 0px"
-            />
-          </q-btn
-          >
-          <q-btn
-            @click="$router.push('/')"
-            class="my-btn-language"
-          >
-            <img src="~/src/assets/russia.svg"
-                 style="padding: 10px 0px"
-            />
-          </q-btn
-          >
-        </div>
       </div>
     </div>
   </div>

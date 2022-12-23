@@ -2,13 +2,21 @@
   <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
     <header class="header-nav" style="position: fixed; top: 0; width: 100%; height: 50px; z-index: 9999; display: flex; justify-content: flex-end" >
-      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click="blockBurgerMenu">
+      <q-btn
+        @click="$router.push('/')"
+        class="my-btn-services"
+        style="top: 12px; left: 20px; position: absolute"
+      >
+        <span style="color: white">RU</span>
+      </q-btn
+      >
+      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click.stop="blockBurgerMenu">
         <div class="hamburger-box">
           <div class="hamburger-inner"></div>
         </div>
       </div>
     </header>
-    <div class="menu" v-scroll style="position: fixed;z-index: 10; min-height: 100%">
+    <div class="menu" style="position: fixed;z-index: 10; min-height: 100%">
       <block-burger-eng v-model:show="showBurgerMenu"></block-burger-eng>
     </div>
     <div class="page">
@@ -39,9 +47,10 @@ const onScroll = debounce(onScrollHandler, 1)
 
 const showBurgerMenu = ref(false)
 
+
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
-  if(showBurgerMenu.value) {
+  if(showBurgerMenu.value === true) {
     document.body.style.overflow = 'hidden'
   }
   else {
@@ -51,6 +60,10 @@ const blockBurgerMenu = () => {
 </script>
 
 <style lang="scss">
+
+body{
+  overflow: visible;
+}
 
 .header-nav {
   position: fixed;

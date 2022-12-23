@@ -16,7 +16,7 @@
         </div>
       </div>
     </header>
-    <div :class="!showBurgerMenu ?'menu': 'menu active'" v-scroll style="position: fixed;z-index: 10; min-height: 100%">
+    <div style="position: fixed;z-index: 10; min-height: 100%">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
     <div class="page">
@@ -50,7 +50,7 @@ const showBurgerMenu = ref(false)
 
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
-  if(showBurgerMenu.value) {
+  if(showBurgerMenu.value === true) {
     document.body.style.overflow = 'hidden'
   }
   else {
@@ -60,10 +60,10 @@ const blockBurgerMenu = () => {
 
 
 
-
 </script>
 
 <style lang="scss">
+
 .header-nav {
   position: fixed;
   top: 0;

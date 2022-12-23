@@ -1,6 +1,6 @@
 <template>
-  <div class="burgerMenu" v-if="show" style="position: absolute;">
-    <div class="my-btn" style="display: flex; align-items: center">
+  <div @click.stop class="burgerMenu" v-if="show" style="position: absolute;">
+    <div @click.stop class="my-btn" style="display: flex; align-items: center">
       <img
         class="logo"
         alt="KIKA PRO MAKEUP"
@@ -31,7 +31,7 @@
         >ПРОРЕЖИВАНИЕ</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          v-scroll-to="'#scrolltest'"
           class="my-btn-services"
         >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</q-btn
         >
@@ -137,6 +137,11 @@ export default {
     },
     hideBlock() {
       this.$emit("update:show", false);
+    },
+    scroll(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+      })
     },
   },
 };
