@@ -51,10 +51,12 @@
         >ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
-          class="my-btn-services"
-        >ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</q-btn
-        >
+          @click="hideBlock"
+          :to="{ path: '/', anchor: '#test' }"
+          class="my-btn-services">
+
+                      ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ
+          </q-btn>
       </div>
       <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column;">
         <q-btn
@@ -112,19 +114,23 @@
 </template>
 
 <script>
+import IndexPage from "../pages/IndexPage.vue"
+
 export default {
   name: "block-burger",
-
   data() {
     return {
       showBtns: false,
       showLinks: false,
+      test: 'test',
     };
   },
   props: {
+
     show: {
       type: Boolean,
       default: false,
+
     },
   },
   methods: {
@@ -137,11 +143,6 @@ export default {
     },
     hideBlock() {
       this.$emit("update:show", false);
-    },
-    scroll(id) {
-      document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-      })
     },
   },
 };

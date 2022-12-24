@@ -1,21 +1,22 @@
 <template>
   <q-layout view="hHh lpR fFf" style="font-size: 10px; overflow: hidden">
     <preloader-menu/>
-    <header class="header-nav">
-      <q-btn
-        @click="$router.push('/eng')"
-        class="my-btn-services"
-        style="top: 12px; left: 20px; position: absolute"
-      >
-        <span style="color: white">ENG</span>
-      </q-btn
-      >
-      <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click.stop="blockBurgerMenu">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
+      <header class="header-nav">
+        <q-btn
+          @click="!blockBurgerMenu"
+          :to="{ path: '/eng'}"
+          class="my-btn-services"
+          style="top: 12px; left: 20px; position: absolute"
+        >
+          <span style="color: white">ENG</span>
+        </q-btn
+        >
+        <div :class="!showBurgerMenu ? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" @click.stop="blockBurgerMenu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     <div style="position: fixed;z-index: 10; min-height: 100%">
       <block-burger v-model:show="showBurgerMenu"></block-burger>
     </div>
@@ -37,7 +38,6 @@ import { state } from 'src/store/simplestore'
 import PreloaderMenu from "components/PreloaderMenu";
 
 
-
 const onScrollHandler = (pos) => {
   state.scrollY = pos
 }
@@ -50,15 +50,13 @@ const showBurgerMenu = ref(false)
 
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
-  if(showBurgerMenu.value === true) {
-    document.body.style.overflow = 'hidden'
+  if (showBurgerMenu.value === true) {
+    document.body.style.overflow = "hidden"
   }
   else {
-    document.body.style.overflow = 'visible';}
+    document.body.style.overflow = "auto"
+  }
 };
-
-
-
 
 </script>
 

@@ -53,9 +53,8 @@
           COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
           class="my-btn-services"
-        >
+        ><a href="#test"></a>
           PROTEIN EYELASH/EYEBROW REPAIR</q-btn
         >
       </div>

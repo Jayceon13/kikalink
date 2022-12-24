@@ -1,6 +1,6 @@
 const routes = [
   {
-    path: "/",
+    path: "",
     component: () => import("layouts/MenuLayout.vue"),
     children: [
       { path: "", component: () => import("pages/IndexPage.vue") },

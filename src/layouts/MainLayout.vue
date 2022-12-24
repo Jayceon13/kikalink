@@ -3,7 +3,8 @@
     <preloader-menu/>
     <header class="header-nav" style="position: fixed; top: 0; width: 100%; height: 50px; z-index: 9999; display: flex; justify-content: flex-end" >
       <q-btn
-        @click="$router.push('/')"
+        @click="!blockBurgerMenu"
+        :to="{ path: '/'}"
         class="my-btn-services"
         style="top: 12px; left: 20px; position: absolute"
       >
@@ -48,14 +49,17 @@ const onScroll = debounce(onScrollHandler, 1)
 const showBurgerMenu = ref(false)
 
 
+
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
-  if(showBurgerMenu.value === true) {
-    document.body.style.overflow = 'hidden'
+  if (showBurgerMenu.value === true) {
+    document.body.style.overflow = "hidden"
   }
   else {
-    document.body.style.overflow = 'visible';}
+    document.body.style.overflow = "auto"
+  }
 };
+
 
 </script>
 
