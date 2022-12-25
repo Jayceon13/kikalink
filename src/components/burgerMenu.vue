@@ -52,7 +52,7 @@
         >
         <q-btn
           @click="hideBlock"
-          :to="{ path: '/', anchor: '#test' }"
+          :to="{ path: '/', hash: '#test1'}"
           class="my-btn-services">
 
                       ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ
@@ -115,7 +115,6 @@
 
 <script>
 import IndexPage from "../pages/IndexPage.vue"
-
 export default {
   name: "block-burger",
   data() {

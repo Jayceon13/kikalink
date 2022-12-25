@@ -3,7 +3,7 @@
     <preloader-menu/>
     <header class="header-nav" style="position: fixed; top: 0; width: 100%; height: 50px; z-index: 9999; display: flex; justify-content: flex-end" >
       <q-btn
-        @click="!blockBurgerMenu"
+        @click="blockBurgerMenu.value(false)"
         :to="{ path: '/'}"
         class="my-btn-services"
         style="top: 12px; left: 20px; position: absolute"
@@ -52,12 +52,6 @@ const showBurgerMenu = ref(false)
 
 const blockBurgerMenu = () => {
   showBurgerMenu.value = !showBurgerMenu.value;
-  if (showBurgerMenu.value === true) {
-    document.body.style.overflow = "hidden"
-  }
-  else {
-    document.body.style.overflow = "auto"
-  }
 };
 
 
