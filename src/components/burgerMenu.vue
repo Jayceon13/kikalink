@@ -1,5 +1,5 @@
 <template>
-  <div class="burgerMenu" v-if="show" @click.stop="hideBlock" style="position: absolute;">
+  <div :class="hideBlock ? 'burgerMenuDown' : 'burgerMenuUp'" v-if="show" @click.stop="hideBlock">
     <div @click.stop class="my-btn" style="display: flex; align-items: center">
       <img
         class="logo"
@@ -8,7 +8,7 @@
         style="width: 200px; height: 80px"
       />
       <q-btn
-        @click="$router.push('/index')"
+        @click="() => { hideBlock(); scrollToAbout() }"
         class="my-btn"
         style="color: rgba(255, 255, 255, 1)"
       >ОБО МНЕ</q-btn
@@ -21,40 +21,38 @@
       >
       <div class="blockBtn" @click.stop v-if="showBtns" style="display: flex; flex-direction: column; color: rgba(255, 255, 255, 1)">
         <q-btn
-          @click="$router.push('/about')"
+          @click="() => { hideBlock(); scrollToShaping() }"
           class="my-btn-services"
         >АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToThinning() }"
           class="my-btn-services"
         >ПРОРЕЖИВАНИЕ</q-btn
         >
         <q-btn
-          @click.stop
+          @click="() => { hideBlock(); scrollToStyling() }"
           class="my-btn-services"
         >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToLightening() }"
           class="my-btn-services"
         >ОСВЕТЛЕНИЕ БРОВЕЙ</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToLamination() }"
           class="my-btn-services"
         >ЛАМИНИРОВАНИЕ РЕСНИЦ</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToCorrection() }"
           class="my-btn-services"
         >ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</q-btn
         >
         <q-btn
-          @click="hideBlock"
-          :to="{ path: '/', hash: '#test1'}"
+          @click="() => { hideBlock(); scrollToProt() }"
           class="my-btn-services">
-
                       ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ
           </q-btn>
       </div>
@@ -143,6 +141,33 @@ export default {
     hideBlock() {
       this.$emit("update:show", false);
     },
+    scrollToAbout() {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToWorks() {
+      document.getElementById('works').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToShaping() {
+      document.getElementById('shaping').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToThinning() {
+      document.getElementById('thinning').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToStyling() {
+      document.getElementById('styling').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToLightening() {
+      document.getElementById('lightening').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToLamination() {
+      document.getElementById('lamination').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToCorrection() {
+      document.getElementById('correction').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToProt() {
+      document.getElementById('prot').scrollIntoView({ behavior: 'smooth' });
+    },
   },
 };
 </script>
@@ -161,19 +186,39 @@ export default {
   align-items: center;
 }
 
-.burgerMenu{
+.burgerMenuDown{
   background: black;
   z-index: 1;
   height: 100%;
-  animation: slide-down 1s ease-in forwards;
+  animation: slide-down 1s ease-in-out forwards;
 
 }
 @keyframes slide-down {
   0%{
     transform: translateY(-100%);
+    opacity: 0;
   }
   100%{
     transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.burgerMenuUp{
+  background: black;
+  z-index: 1;
+  height: 100%;
+  animation: slide-up 1s ease-in-out forwards;
+
+}
+@keyframes slide-up {
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 

@@ -8,7 +8,7 @@
         style="width: 200px; height: 80px"
       />
       <q-btn
-        @click="$router.push('/index')"
+        @click="() => { hideBlock(); scrollToAbout() }"
         class="my-btn"
         style="color: rgba(255, 255, 255, 1)"
       >ABOUT ME</q-btn
@@ -21,40 +21,41 @@
       >
       <div class="blockBtn" @click.stop v-if="showBtns" style="display: flex; flex-direction: column; color: rgba(255, 255, 255, 1)">
         <q-btn
-          @click="$router.push('/about')"
+          @click="() => { hideBlock(); scrollToShaping() }"
           class="my-btn-services"
         >EYEBROW ARCHITECTURE/SHAPING</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToThinning() }"
           class="my-btn-services"
         >THINNING</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToStyling() }"
           class="my-btn-services"
         >LONG-TERM EYEBROW STYLING</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToLightening() }"
           class="my-btn-services"
         >
           EYEBROW LIGHTENING</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToLamination() }"
           class="my-btn-services"
         >EYELASH LAMINATION</q-btn
         >
         <q-btn
-          @click="$router.push('/services')"
+          @click="() => { hideBlock(); scrollToCorrection() }"
           class="my-btn-services"
         >
           COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</q-btn
         >
         <q-btn
+          @click="() => { hideBlock(); scrollToProt() }"
           class="my-btn-services"
-        ><a href="#test"></a>
+        >
           PROTEIN EYELASH/EYEBROW REPAIR</q-btn
         >
       </div>
@@ -137,6 +138,33 @@ export default {
     },
     hideBlock() {
       this.$emit("update:show", false);
+    },
+    scrollToAbout() {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToWorks() {
+      document.getElementById('works').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToShaping() {
+      document.getElementById('shaping').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToThinning() {
+      document.getElementById('thinning').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToStyling() {
+      document.getElementById('styling').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToLightening() {
+      document.getElementById('lightening').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToLamination() {
+      document.getElementById('lamination').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToCorrection() {
+      document.getElementById('correction').scrollIntoView({ behavior: 'smooth' });
+    },
+    scrollToProt() {
+      document.getElementById('prot').scrollIntoView({ behavior: 'smooth' });
     },
   },
 };

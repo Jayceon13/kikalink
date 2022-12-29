@@ -17,7 +17,7 @@
       />
         <div class="main-page" style="color: white; margin: 20px">
           <div class="title-items">
-          <h5 data-aos="fade-up-right"
+          <h5 id="about" data-aos="fade-up-right"
               data-aos-duration="3000" style="text-align: center; width: 150px; font-family: 'Bellota'; box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5);"
           >
             ОБО МНЕ
@@ -36,7 +36,7 @@
               С моим макияжем ты будешь неотразима ❤️
               Создаю рекламу для бьюти брендов ⭐️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-            <h6
+            <h6 id="works"
               data-aos="fade-up-left"
               data-aos-duration="3000"
               >МОИ РАБОТЫ</h6>
@@ -84,7 +84,7 @@
               style="text-align: center">
           <h5 style="font-size: 28px">УСЛУГИ</h5>
           </div>
-          <h6 data-aos="fade-up-right"
+          <h6 id="shaping" data-aos="fade-up-right"
               data-aos-duration="3000"
               ><a name="test">АРХИТЕКТУРА БРОВЕЙ /СОЗДАНИЕ ФОРМЫ</a></h6>
 
@@ -94,7 +94,7 @@
                  alt=""
                  style="max-width: 340px">
              <div class="main-left" style="width: 100%; text-align: -webkit-right">
-            <h6
+            <h6 id="thinning"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
@@ -108,8 +108,7 @@
               а также волоски в местах их большого скопления. Такой метод имеет
               множество преимуществ и может кардинально изменить весь процесс коррекции.️</p>
              </div>
-          <h5
-            href="scrolltest"
+          <h5 id="styling"
             data-aos="fade-up-right"
             data-aos-duration="3000"
             >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
@@ -143,7 +142,7 @@
               бровями и ресницами . Восстанавливающая процедура после неудачного ламинирования . Подходит так же для тех кто хочет более натуральный эффект без вреда для волос . ️</p>
 
             <div class="main-left" style="width: 100%; text-align: -webkit-right">
-            <h5
+            <h5 id="lightening"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
@@ -164,7 +163,7 @@
               которые хотят сделать образ визуально легче.
               ️</p>
               </div>
-          <h5
+          <h5 id="lamination"
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
@@ -187,7 +186,7 @@
               реснички и которые не хотят пользоваться нарощенными ресницами, желая
               создать максимально естественный, но привлекательный образ.️</p>
             <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5
+          <h5 id="correction"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
@@ -210,7 +209,7 @@
               Кроме того, с помощью этой процедуры можно скорректировать форму бровей — как и при помощи перманентного макияжа.️</p>
             </div>
               <h5
-                id="test"
+                id="prot"
             data-aos="fade-up-right"
             data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
             <img data-aos="fade-up-right"
@@ -239,7 +238,6 @@
 import {computed, onMounted, watch, ref} from "vue";
 import {state} from "src/store/simplestore";
 
-
 const slide = ref(1)
 const autoplay = ref(true)
 const vdoPoster = '/assets/poster.png' // Переложи обложку локально, рядом с видео
@@ -258,7 +256,6 @@ const scrollToRel = (y) => {
   // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
   const absHeight = page.clientHeight - document.documentElement.clientHeight
   const value = Math.ceil(y / absHeight * 1000)
-  console.warn('Скролл: %s % / Y=%s, ABS=%s', value, y, absHeight)
   return value
 }
 
@@ -330,6 +327,7 @@ p{
   bottom: 0;
   z-index: -1;
 }
+
 
 .my-btn {
   color: white;

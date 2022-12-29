@@ -17,7 +17,7 @@
       />
       <div class="main-page" style="color: white; margin: 20px">
         <div class="title-items">
-          <h5 data-aos="fade-up-right"
+          <h5 id="about" data-aos="fade-up-right"
               data-aos-duration="3000" style="text-align: center; width: 150px; font-family: 'Bellota'; box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5);"
           >
             ABOUT ME
@@ -36,7 +36,7 @@
           With my makeup you will be irresistible ❤️
           I create ads for beauty brands ⭐️</p>
         <div class="main-left" style="width: 100%; text-align: -webkit-right">
-        <h6>MY WORKS</h6>
+        <h6 id="works">MY WORKS</h6>
           <q-carousel
             data-aos="fade-up-left"
             data-aos-duration="3000"
@@ -78,7 +78,7 @@
             style="text-align: center">
             <h5 style="font-size: 28px">SERVICES</h5>
           </div>
-          <h6 data-aos="fade-up-right"
+          <h6 id="shaping" data-aos="fade-up-right"
               data-aos-duration="3000"
           >EYEBROW ARCHITECTURE/SHAPING</h6>
 
@@ -88,7 +88,7 @@
                alt=""
                style="max-width: 340px">
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h6
+          <h6 id="thinning"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
@@ -103,6 +103,7 @@
             many benefits and can dramatically change the entire correction process.️</p>
           </div>
             <h5
+              id="styling"
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >LONG-TERM EYEBROW STYLING</h5>
@@ -136,7 +137,7 @@
             eyebrows and eyelashes. Restorative procedure after unsuccessful lamination. Also suitable for those who want a more natural effect without harm to the hair.
             ️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5
+          <h5 id="lightening"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
@@ -157,7 +158,7 @@
             who want to make the image visually lighter.
             ️</p>
           </div>
-          <h5
+          <h5 id="lamination"
             data-aos="fade-up-right"
             data-aos-duration="3000"
           >EYELASH LAMINATION</h5>
@@ -180,7 +181,7 @@
             eyelashes and who do not want to use eyelash extensions, wanting
             create the most natural yet attractive look.️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5
+          <h5 id="correction"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end">COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</h5>
@@ -203,7 +204,7 @@
             In addition, with the help of this procedure, you can correct the shape of the eyebrows - just like with permanent makeup
             .️</p>
             </div>
-          <h5 id="test"
+          <h5 id="prot"
             data-aos="fade-up-right"
             data-aos-duration="3000">PROTEIN EYELASH/EYEBROW REPAIR</h5>
           <img data-aos="fade-up-right"
@@ -252,7 +253,6 @@ const scrollToRel = (y) => {
   // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
   const absHeight = page.clientHeight - document.documentElement.clientHeight
   const value = Math.ceil(y / absHeight * 1000)
-  console.warn('Скролл: %s % / Y=%s, ABS=%s', value, y, absHeight)
   return value
 }
 
