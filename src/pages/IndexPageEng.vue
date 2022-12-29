@@ -4,6 +4,9 @@
       <video id="bg-vdo" muted playsinline  :poster="vdoPoster">
         <source :src="vdoSrc" type="video/mp4">
       </video>
+      <video class="bg-mobile-vdo" loop autoplay muted playsinline  :poster="vdoPoster">
+        <source :src="vdoSrc" type="video/mp4">
+      </video>
       <img
         data-aos="zoom-in"
         data-aos-duration="3000"
@@ -273,6 +276,23 @@ watch(y, async (val) => {
 </script>
 
 <style lang="scss" scoped>
+.bg-mobile-vdo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+}
+@media screen and (max-width: 450px) {
+  .bg-mobile-vdo {
+    opacity: 1;
+  }
+}
 
 p{
   max-width: 340px;

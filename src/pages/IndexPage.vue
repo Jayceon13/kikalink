@@ -295,7 +295,7 @@ watch(y, async (val) => {
   z-index: -1;
   opacity: 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .bg-mobile-vdo {
     opacity: 1;
   }
