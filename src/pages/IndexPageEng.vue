@@ -18,7 +18,8 @@
       <div class="main-page" style="color: white; margin: 20px">
         <div class="title-items">
           <h5 id="about" data-aos="fade-up-right"
-              data-aos-duration="3000" style="text-align: center; width: 150px; font-family: 'Bellota'; box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5);"
+              data-aos-duration="3000"
+              style="text-align: center; width: 150px;"
           >
             ABOUT ME
           </h5>
@@ -33,10 +34,12 @@
           For 6 years I have been creating beauty for other people.
           COMMERCIAL AND NON-COMMERCIAL makeup is my everything.
           I create unique images for filming music videos and commercials.
-          With my makeup you will be irresistible ❤️
-          I create ads for beauty brands ⭐️</p>
+          With my makeup you will be irresistible
+          I create ads for beauty brands️</p>
         <div class="main-left" style="width: 100%; text-align: -webkit-right">
-        <h6 id="works">MY WORKS</h6>
+        <h6 data-aos="fade-up-left"
+            data-aos-duration="3000"
+          id="works">MY WORKS</h6>
           <q-carousel
             data-aos="fade-up-left"
             data-aos-duration="3000"
@@ -76,7 +79,7 @@
             data-aos-duration="5000"
             class="service-paragraph"
             style="text-align: center">
-            <h5 style="font-size: 28px">SERVICES</h5>
+            <h5>SERVICES</h5>
           </div>
           <h6 id="shaping" data-aos="fade-up-right"
               data-aos-duration="3000"
@@ -102,11 +105,11 @@
             as well as hairs in places of their large accumulation. Such a method has
             many benefits and can dramatically change the entire correction process.️</p>
           </div>
-            <h5
+            <h6
               id="styling"
             data-aos="fade-up-right"
             data-aos-duration="3000"
-          >LONG-TERM EYEBROW STYLING</h5>
+          >LONG-TERM EYEBROW STYLING</h6>
           <img data-aos="fade-up-right"
                data-aos-duration="3000"
                src="assets/lashes7.jpg"
@@ -137,11 +140,11 @@
             eyebrows and eyelashes. Restorative procedure after unsuccessful lamination. Also suitable for those who want a more natural effect without harm to the hair.
             ️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5 id="lightening"
+          <h6 id="lightening"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
-          >EYEBROW LIGHTENING</h5>
+          >EYEBROW LIGHTENING</h6>
           <img data-aos="fade-up-left"
                data-aos-duration="3000"
                src="assets/lashes9.jpg"
@@ -158,10 +161,10 @@
             who want to make the image visually lighter.
             ️</p>
           </div>
-          <h5 id="lamination"
+          <h6 id="lamination"
             data-aos="fade-up-right"
             data-aos-duration="3000"
-          >EYELASH LAMINATION</h5>
+          >EYELASH LAMINATION</h6>
           <img data-aos="fade-up-right"
                data-aos-duration="3000"
                src="assets/lashes3.jpg"
@@ -181,10 +184,10 @@
             eyelashes and who do not want to use eyelash extensions, wanting
             create the most natural yet attractive look.️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5 id="correction"
+          <h6 id="correction"
             data-aos="fade-up-left"
             data-aos-duration="3000"
-            style="text-align: end">COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</h5>
+            style="text-align: end">COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</h6>
           <img data-aos="fade-up-left"
                data-aos-duration="3000"
                src="assets/lashes8.jpg"
@@ -204,9 +207,9 @@
             In addition, with the help of this procedure, you can correct the shape of the eyebrows - just like with permanent makeup
             .️</p>
             </div>
-          <h5 id="prot"
+          <h6 id="prot"
             data-aos="fade-up-right"
-            data-aos-duration="3000">PROTEIN EYELASH/EYEBROW REPAIR</h5>
+            data-aos-duration="3000">PROTEIN EYELASH/EYEBROW REPAIR</h6>
           <img data-aos="fade-up-right"
                data-aos-duration="3000"
                src="assets/lashes10.jpg"
@@ -276,6 +279,21 @@ watch(y, async (val) => {
 </script>
 
 <style lang="scss" scoped>
+
+.list-page {
+  font-family: 'Chilanka', cursive;
+}
+h5 {
+  font-size: 28px;
+}
+
+h5, h6, p{
+  background: radial-gradient(49.99% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  backdrop-filter: blur(2px);
+}
 .bg-mobile-vdo {
   width: 100vw;
   height: 100vh;

@@ -18,7 +18,7 @@
         <div class="main-page" style="color: white; margin: 20px">
           <div class="title-items">
           <h5 id="about" data-aos="fade-up-right"
-              data-aos-duration="3000" style="text-align: center; width: 150px; font-family: 'Bellota'; box-shadow: -10px 0 0 rgba(0, 0, 0, 0.5), 10px 0 0 rgba(0, 0, 0, 0.5);background-color: rgba(0, 0, 0, 0.5);"
+              data-aos-duration="3000"
           >
             ОБО МНЕ
           </h5>
@@ -29,12 +29,12 @@
                alt=""
                style="max-width: 340px">
             <p data-aos="fade-up-right"
-               data-aos-duration="3000">Меня зовут Кристина ,
-              Уже 6 лет я создаю красоту для других людей .
-              КОМЕРЧЕСКИЙ И НЕКОМЕРЧЕСКИЙ макияж мое все .
+               data-aos-duration="3000">Меня зовут Кристина.<br>
+              Уже 6 лет я создаю красоту для других людей.
+              КОМЕРЧЕСКИЙ И НЕКОМЕРЧЕСКИЙ макияж мое все.<br>
               Создаю уникальные образы для сьемок музыкальных клипов и рекламы .
-              С моим макияжем ты будешь неотразима ❤️
-              Создаю рекламу для бьюти брендов ⭐️</p>
+              <br> моим макияжем ты будешь неотразима
+              Создаю рекламу для бьюти брендо️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
             <h6 id="works"
               data-aos="fade-up-left"
@@ -82,7 +82,7 @@
               data-aos-duration="5000"
               class="service-paragraph"
               style="text-align: center">
-          <h5 style="font-size: 28px">УСЛУГИ</h5>
+          <h5>УСЛУГИ</h5>
           </div>
           <h6 id="shaping" data-aos="fade-up-right"
               data-aos-duration="3000"
@@ -101,17 +101,17 @@
           >ПРОРЕЖИВАНИЕ</h6>
 
             <p data-aos="fade-up-left"
-               data-aos-duration="3000" style="text-align: end">Описание услуги :
+               data-aos-duration="3000" style="text-align: end">Описание услуги :<br><br>
 
               Прореживание – это способ коррекции бровей,
               при котором удаляются жесткие, длинные или закрученные волоски,
-              а также волоски в местах их большого скопления. Такой метод имеет
+              а также волоски в местах их большого скопления.<br>Такой метод имеет
               множество преимуществ и может кардинально изменить весь процесс коррекции.️</p>
              </div>
-          <h5 id="styling"
+          <h6 id="styling"
             data-aos="fade-up-right"
             data-aos-duration="3000"
-            >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h5>
+            >ДОЛГОВРЕМЕННАЯ УКЛАДКА БРОВЕЙ</h6>
             <img data-aos="fade-up-right"
                  data-aos-duration="3000"
                  src="assets/lashes7.jpg"
@@ -119,12 +119,12 @@
                  style="max-width: 340px">
 
             <p data-aos="fade-up-right"
-               data-aos-duration="3000">Описание услуги :
+               data-aos-duration="3000">Описание услуги :<br><br>
 
               Долговременная укладка бровей – это нанесение специального состава,
-              который фиксирует волоски в нужном направлении.
+              который фиксирует волоски в нужном направлении.<br>
               Раньше долговременную укладку бровей делали составами,
-              которые использовались для ламинирования ресниц. Именно поэтому
+              которые использовались для ламинирования ресниц.<br>Именно поэтому
               есть второе название процедуры – ламинирование бровей
               Подходит для тех у кого мало бровей , с помощью процедуры
               волоски становятся плотнее и их становится больше .
@@ -142,11 +142,11 @@
               бровями и ресницами . Восстанавливающая процедура после неудачного ламинирования . Подходит так же для тех кто хочет более натуральный эффект без вреда для волос . ️</p>
 
             <div class="main-left" style="width: 100%; text-align: -webkit-right">
-            <h5 id="lightening"
+            <h6 id="lightening"
             data-aos="fade-up-left"
             data-aos-duration="3000"
             style="text-align: end"
-          >ОСВЕТЛЕНИЕ БРОВЕЙ</h5>
+          >ОСВЕТЛЕНИЕ БРОВЕЙ</h6>
             <img data-aos="fade-up-left"
                  data-aos-duration="3000"
                  src="assets/lashes9.jpg"
@@ -163,10 +163,10 @@
               которые хотят сделать образ визуально легче.
               ️</p>
               </div>
-          <h5 id="lamination"
+          <h6 id="lamination"
             data-aos="fade-up-right"
             data-aos-duration="3000"
-          >ЛАМИНИРОВАНИЕ РЕСНИЦ</h5>
+          >ЛАМИНИРОВАНИЕ РЕСНИЦ</h6>
             <img data-aos="fade-up-right"
                  data-aos-duration="3000"
                  src="assets/lashes3.jpg"
@@ -186,10 +186,10 @@
               реснички и которые не хотят пользоваться нарощенными ресницами, желая
               создать максимально естественный, но привлекательный образ.️</p>
             <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h5 id="correction"
+          <h6 id="correction"
             data-aos="fade-up-left"
             data-aos-duration="3000"
-            style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h5>
+            style="text-align: end">ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</h6>
             <img data-aos="fade-up-left"
                  data-aos-duration="3000"
                  src="assets/lashes8.jpg"
@@ -208,10 +208,10 @@
               Из-за схожести визуального эффекта окрашивание хной также называют биотатуажем.
               Кроме того, с помощью этой процедуры можно скорректировать форму бровей — как и при помощи перманентного макияжа.️</p>
             </div>
-              <h5
+              <h6
                 id="prot"
             data-aos="fade-up-right"
-            data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h5>
+            data-aos-duration="3000">ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ</h6>
             <img data-aos="fade-up-right"
                  data-aos-duration="3000"
                  src="assets/lashes10.jpg"
@@ -279,7 +279,21 @@ watch(y, async (val) => {
 </script>
 
 <style lang="scss" scoped>
+.list-page{
+  font-family: 'Chilanka', cursive;
+}
 
+h5 {
+  font-size: 28px;
+}
+
+h5, h6, p{
+  background: radial-gradient(49.99% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  backdrop-filter: blur(2px);
+}
 .bg-mobile-vdo {
   width: 100vw;
   height: 100vh;
