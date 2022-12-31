@@ -281,7 +281,7 @@ watch(y, async (val) => {
 <style lang="scss" scoped>
 
 .list-page {
-  font-family: 'Chilanka', cursive;
+  font-family: 'Chilanka';
 }
 h5 {
   font-size: 28px;

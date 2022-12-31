@@ -1,5 +1,5 @@
 <template>
-  <div class="burgerMenu" v-if="show" style="position: absolute;">
+  <div :class="hideBlock ? 'burgerMenuDown' : 'burgerMenuUp'" v-if="show" @click.stop="hideBlock">
     <div class="my-btn" style="display: flex; align-items: center">
       <img
         class="logo"
@@ -171,6 +171,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.burgerMenuDown{
+  background: black;
+  z-index: 1;
+  height: 100%;
+  animation: slide-down 1s ease-in-out forwards;
+
+}
+@keyframes slide-down {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.burgerMenuUp{
+  background: black;
+  z-index: 1;
+  height: 100%;
+  animation: slide-up 1s ease-in-out forwards;
+
+}
+@keyframes slide-up {
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
 .change-language{
   flex-direction: row;
   width: 100px;
