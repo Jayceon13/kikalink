@@ -1,230 +1,166 @@
 <template>
   <div class="list-page">
     <q-page class="flex flex-direction: column flex-center">
-      <video id="bg-vdo" muted playsinline  :poster="vdoPoster">
-        <source :src="vdoSrc" type="video/mp4">
+      <video class="bg-mobile-vdo" loop autoplay muted playsinline :poster="vdoPoster">
+        <source src="/assets/video.mp4" type="video/mp4">
       </video>
-      <video class="bg-mobile-vdo" loop autoplay muted playsinline  :poster="vdoPoster">
-        <source :src="vdoSrc" type="video/mp4">
-      </video>
-      <img
-        data-aos="zoom-in"
-        data-aos-duration="3000"
-        class="logo"
-        alt="KIKA PRO MAKEUP"
-        src="~assets/KIKAPROMAKE.svg"
-        style="width: 200px; height: 200px"
-      />
+      <img data-aos="zoom-in" data-aos-duration="3000" class="logo" alt="KIKA PRO MAKEUP" src="~assets/KIKAPROMAKE.svg"
+           style="width: 200px; height: 200px" />
       <div class="main-page" style="color: white; margin: 20px">
         <div class="title-items">
-          <h5 id="about" data-aos="fade-up-right"
-              data-aos-duration="3000"
-              style="text-align: center; width: 150px;"
-          >
+          <h5 id="about" data-aos="fade-up-right" data-aos-duration="3000">
             ABOUT ME
           </h5>
         </div>
-        <img data-aos="fade-up-right"
-             data-aos-duration="3000"
-             src="assets/about1.jpg"
-             alt=""
-             style="max-width: 340px">
-        <p data-aos="fade-up-right"
-           data-aos-duration="3000">My name is Christina ,
+        <img data-aos="fade-up-right" data-aos-duration="3000" src="/assets/about1.jpg" alt="" style="max-width: 340px; margin-top: 65px">
+        <p data-aos="fade-up-right" data-aos-duration="3000" style="text-align: center">My name is Christina.<br>
           For 6 years I have been creating beauty for other people.
-          COMMERCIAL AND NON-COMMERCIAL makeup is my everything.
-          I create unique images for filming music videos and commercials.
-          With my makeup you will be irresistible
-          I create ads for beauty brands️</p>
-        <div class="main-left" style="width: 100%; text-align: -webkit-right">
-        <h6 data-aos="fade-up-left"
-            data-aos-duration="3000"
-          id="works">MY WORKS</h6>
-          <q-carousel
-            data-aos="fade-up-left"
-            data-aos-duration="3000"
-            swipeable
-            animated
-            v-model="slide"
-            infinite
-            :autoplay="autoplay"
-            arrows
-            transition-prev="slide-right"
-            transition-next="slide-left"
-            @mouseenter="autoplay = false"
-            @mouseleave="autoplay = true"
-            draggable="false"
-            navigation-active-icon:-addimg
-            style="max-width: 340px"
-          >
-            <q-carousel-slide :name="1" img-src="assets/makeup1.jpg" />
-            <q-carousel-slide :name="2" img-src="assets/makeup2.jpg" />
-            <q-carousel-slide :name="3" img-src="assets/makeup3.jpg" />
-            <q-carousel-slide :name="4" img-src="assets/makeup4.jpg" />
-            <q-carousel-slide :name="5" img-src="assets/makeup5.jpg" />
-            <q-carousel-slide :name="6" img-src="assets/makeup6.jpg" />
-            <q-carousel-slide :name="7" img-src="assets/makeup7.jpg" />
-            <q-carousel-slide :name="8" img-src="assets/makeup8.jpg" />
-            <q-carousel-slide :name="9" img-src="assets/makeup9.jpg" />
-            <q-carousel-slide :name="10" img-src="assets/makeup10.jpg" />
-            <q-carousel-slide :name="11" img-src="assets/makeup11.jpg" />
-            <q-carousel-slide :name="12" img-src="assets/makeup12.jpg" />
-            <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
-          </q-carousel>
+          COMMERCIAL AND NON-COMMERCIAL makeup is my everything.<br><br>
+          I create random images for filming music videos and commercials.
+          <br><br>With my makeup you will be irresistible.<br><br>
+          I create ads for beauty brands.
+        </p>
+        <div class="main-left" style="width: 100%; text-align: center">
+          <h6 id="works" data-aos="fade-up-left" data-aos-duration="3000">MY WORKS</h6>
 
+          <div class="q-pa-md" style="text-align: left">
+            <p data-aos="fade-up-right" data-aos-duration="3000">MAKEUP | STYLING</p>
+            <q-carousel data-aos="fade-up-right" data-aos-duration="3000" swipeable animated v-model="slide1" infinite
+                        :autoplay="autoplay" arrows transition-prev="slide-right" transition-next="slide-left"
+                        @mouseenter="autoplay = false" @mouseleave="autoplay = true" draggable="false"
+                        navigation-active-icon:-addimg style="max-width: 250px; padding: 0;">
+              <q-carousel-slide :name="1" img-src="assets/makeup1.jpg" />
+              <q-carousel-slide :name="2" img-src="assets/makeup2.jpg" />
+              <q-carousel-slide :name="3" img-src="assets/makeup5.jpg" />
+              <q-carousel-slide :name="4" img-src="assets/makeup4.jpg" />
+              <q-carousel-slide :name="5" img-src="assets/makeup3.jpg" />
+              <q-carousel-slide :name="6" img-src="assets/makeup6.jpg" />
+              <q-carousel-slide :name="7" img-src="assets/makeup7.jpg" />
+              <q-carousel-slide :name="8" img-src="assets/makeup8.jpg" />
+              <q-carousel-slide :name="9" img-src="assets/makeup9.jpg" />
+              <q-carousel-slide :name="10" img-src="assets/makeup10.jpg" />
+              <q-carousel-slide :name="11" img-src="assets/makeup11.jpg" />
+              <q-carousel-slide :name="12" img-src="assets/makeup12.jpg" />
+              <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
+              <q-carousel-slide :name="14" img-src="assets/makeup15.jpg" />
+              <q-carousel-slide :name="15" img-src="assets/makeup14.jpg" />
+            </q-carousel>
+            <div class="works-left" style="width: 100%; text-align: -webkit-right; margin-top: 15px">
+              <p data-aos="fade-up-left" data-aos-duration="3000">EYEBROWS | EYELASHES</p>
+              <q-carousel class="img-left" data-aos="fade-up-left" data-aos-duration="3000" swipeable animated v-model="slide2" infinite
+                          :autoplay="autoplay" arrows transition-prev="slide-right" transition-next="slide-left"
+                          @mouseenter="autoplay = false" @mouseleave="autoplay = true" draggable="false"
+                          navigation-active-icon:-addimg style="max-width: 250px; padding: 0; text-align: end">
+                <q-carousel-slide :name="1" img-src="assets/lashes1.jpg" />
+                <q-carousel-slide :name="2" img-src="assets/lashes2.jpg" />
+                <q-carousel-slide :name="3" img-src="assets/lashes3.jpg" />
+                <q-carousel-slide :name="4" img-src="assets/lashes4.jpg" />
+                <q-carousel-slide :name="5" img-src="assets/lashes5.jpg" />
+                <q-carousel-slide :name="6" img-src="assets/lashes6.jpg" />
+                <q-carousel-slide :name="7" img-src="assets/lashes7.jpg" />
+                <q-carousel-slide :name="8" img-src="assets/lashes8.jpg" />
+                <q-carousel-slide :name="9" img-src="assets/lashes9.jpg" />
+                <q-carousel-slide :name="10" img-src="assets/lashes10.jpg" />
+              </q-carousel>
+            </div>
+          </div>
         </div>
         <div class="service-menu">
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="5000"
-            class="service-paragraph"
-            style="text-align: center">
-            <h5>SERVICES</h5>
-          </div>
-          <h6 id="shaping" data-aos="fade-up-right"
-              data-aos-duration="3000"
-          >EYEBROW ARCHITECTURE/SHAPING</h6>
 
-          <img data-aos="fade-up-right"
-               data-aos-duration="3000"
-               src="assets/lashes6.jpg"
-               alt=""
+          <div data-aos="zoom-in" data-aos-duration="5000" class="service-paragraph" style="text-align: center">
+            <h5>УСЛУГИ</h5>
+          </div>
+          <h6 id="shaping" data-aos="fade-up-right" data-aos-duration="3000">EYEBROW ARCHITECTURE/CREATION
+            FORMS</h6>
+          <p data-aos="fade-up-right" data-aos-duration="3000">PRICE: 50AED | 14$ | 250TL</p>
+
+          <img data-aos="fade-up-right" data-aos-duration="3000" src="assets/lashes6.jpg" alt=""
                style="max-width: 340px">
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h6 id="thinning"
-            data-aos="fade-up-left"
-            data-aos-duration="3000"
-            style="text-align: end"
-          >THINNING</h6>
+            <h6 id="thinning" data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">THINNING</h6>
+            <p data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">PRICE: 50AED | 14$ | 250TL</p>
 
-          <p data-aos="fade-up-left"
-             data-aos-duration="3000" style="text-align: end">Service description:
-
-            Thinning is a way to correct eyebrows,
-            in which stiff, long or twisted hairs are removed,
-            as well as hairs in places of their large accumulation. Such a method has
-            many benefits and can dramatically change the entire correction process.️</p>
+            <q-btn class="content_info-name content_border-btn" data-aos="fade-left" @click="blockThin" style="text-align: end">
+              <p class="btn-name" style="margin: 0; padding-right: 20px">
+                Service description:</p>
+              <img :class="!showThin ? 'rotate-animation' : 'rotate-animation-obj'" src="/icons/Arrow.svg">
+            </q-btn>
+            <p data-aos="fade-up-left" data-aos-duration="3000" v-if="showThin">
+              <br>
+              Thinning is a way to correct eyebrows,
+              in which stiff, long or twisted hairs are removed,
+              as well as hairs in places of their large accumulation.<br><br>This method has
+              many benefits and can dramatically change the entire correction process..️</p>
           </div>
-            <h6
-              id="styling"
-            data-aos="fade-up-right"
-            data-aos-duration="3000"
-          >LONG-TERM EYEBROW STYLING</h6>
-          <img data-aos="fade-up-right"
-               data-aos-duration="3000"
-               src="assets/lashes7.jpg"
-               alt=""
+          <h6 id="styling" data-aos="fade-up-right" data-aos-duration="3000">LONG-TERM EYEBROW STYLING</h6>
+          <p data-aos="fade-up-right" data-aos-duration="3000">PRICE: 170AED | 46$ | 600TL</p>
+          <img data-aos="fade-up-right" data-aos-duration="3000" src="assets/lashes7.jpg" alt=""
                style="max-width: 340px">
-
-          <p data-aos="fade-up-right"
-             data-aos-duration="3000">Service description:
+          <br>
+          <q-btn class="content_info-name content_border-btn" data-aos="fade-right" @click="blockStyling">
+            <p class="btn-name" style="margin: 0; padding-right: 20px">Service description:</p>
+            <img :class="!showStyling ? 'rotate-animation' : 'rotate-animation-obj'" src="/icons/Arrow.svg">
+          </q-btn>
+          <p data-aos="fade-up-right" data-aos-duration="3000" v-if="showStyling">
+            <br><br>
 
             Long-term eyebrow styling is the application of a special composition,
-            which fixes the hairs in the right direction.
+            which fixes the hairs in the right direction.<br><br>
             Previously, long-term eyebrow styling was done with compositions,
-            which were used for lamination of eyelashes. That is why
-            there is a second name for the procedure - eyebrow lamination
-            Suitable for those who have few eyebrows , through the procedure
-            the hairs become denser and there are more of them.
-            Also suitable for those who have hard, unruly eyebrows,
-            which cannot be fixed with a fixative.
-            Eyebrow lightening
-            The procedure is suitable for those who have too dark hair or those who
-            darkened hair.
-            Eyelash lamination
-            If your eyelashes are looking down and you can't see them, this is the procedure.
-            perfect for you. With the help of lamination, we create a bend in the eyelashes, thicken the hair. The effect of extended eyelashes.
-            Eyebrow coloring/correction (henna/paint)
-            Protein eyelash/eyebrow restoration
-            Completely non-chemical formulations nourish and care for your
-            eyebrows and eyelashes. Restorative procedure after unsuccessful lamination. Also suitable for those who want a more natural effect without harm to the hair.
-            ️</p>
+            which were used for eyelash lamination.<br><br>That is why
+            there is a second name for the procedure - eyebrow lamination.<br><br>
+            Suitable for those who have few eyebrows, through the procedure
+            the hairs become denser and there are more of them.<br><br>
+            Also suitable for those who have hard naughty eyebrows,
+            which cannot be fixed with a fixative..️</p>
+
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h6 id="lightening"
-            data-aos="fade-up-left"
-            data-aos-duration="3000"
-            style="text-align: end"
-          >EYEBROW LIGHTENING</h6>
-          <img data-aos="fade-up-left"
-               data-aos-duration="3000"
-               src="assets/lashes9.jpg"
-               alt=""
-               style="max-width: 340px">
+            <h6 id="lightening" data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">LIGHTENING
+              EYEBROW</h6>
+            <p data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">PRICE: 100AED | 27$ | 400TL</p>
+            <img data-aos="fade-up-left" data-aos-duration="3000" src="assets/lashes10.jpg" alt=""
+                 style="max-width: 340px">
+              <br>
+            <q-btn class="content_info-name content_border-btn" data-aos="fade-left" @click="blockLightening" style="text-align: end">
+              <p class="btn-name" style="margin: 0; padding-right: 20px">Service description:</p>
+              <img :class="!showLightening ? 'rotate-animation' : 'rotate-animation-obj'" src="/icons/Arrow.svg">
+            </q-btn>
+            <p data-aos="fade-up-left" data-aos-duration="3000" v-if="showLightening">
+              <br><br>
 
-          <p data-aos="fade-up-left"
-             data-aos-duration="3000">Service description:
-
-            Lightening is the partial or complete removal of artificial or natural pigment,
-            located in the structure of the hair, using special tools.
-            Eyebrow lightening was originally designed to make the hair color resonate with the color of the eyebrow hairs.
-            Today, many girls and young people use this service,
-            who want to make the image visually lighter.
-            ️</p>
+              Lightening is the partial or complete removal of artificial or natural pigment,
+              located in the structure of the hair, with the help of special tools.<br><br>
+              Eyebrow lightening was originally designed to make the hair color resonate with the color of the eyebrow hairs.<br><br>
+              Today, many girls and young people use this service,
+              who want to make the image visually lighter.
+              ️</p>
           </div>
-          <h6 id="lamination"
-            data-aos="fade-up-right"
-            data-aos-duration="3000"
-          >EYELASH LAMINATION</h6>
-          <img data-aos="fade-up-right"
-               data-aos-duration="3000"
-               src="assets/lashes3.jpg"
-               alt=""
+          <h6 id="lamination" data-aos="fade-up-right" data-aos-duration="3000">EYELASH LAMINATION</h6>
+          <p data-aos="fade-up-right" data-aos-duration="3000">PRICE: 170AED | 46$ | 600TL</p>
+          <img data-aos="fade-up-right" data-aos-duration="3000" src="/assets/lashes3.jpg" alt=""
                style="max-width: 340px">
-
-          <p data-aos="fade-up-right"
-             data-aos-duration="3000">Service description:
+          <br>
+          <q-btn class="content_info-name content_border-btn" data-aos="fade-right" @click="blockLamination">
+            <p class="btn-name" style="margin: 0; padding-right: 20px">Service description:</p>
+            <img :class="!showLamination ? 'rotate-animation' : 'rotate-animation-obj'" src="/icons/Arrow.svg">
+          </q-btn>
+          <p data-aos="fade-up-right" data-aos-duration="3000" v-if="showLamination"><br><br>
 
             Absolutely safe and modern eyelash care technology,
-            allowing you to make the look more expressive. With the help of special
+            allowing you to make the look more expressive.<br><br>With the help of special
             solutions, the eyelashes are affected, as a result of which they
             become smooth, naturally thickened and elongated.
-            Lamination of eyelashes is a safe and caring procedure,
-            therefore, in principle, suitable for everyone. Especially lamination
-            will decorate the eyes of those girls who do not have very bright and thick own
-            eyelashes and who do not want to use eyelash extensions, wanting
-            create the most natural yet attractive look.️</p>
+            .️</p>
           <div class="main-left" style="width: 100%; text-align: -webkit-right">
-          <h6 id="correction"
-            data-aos="fade-up-left"
-            data-aos-duration="3000"
-            style="text-align: end">COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</h6>
-          <img data-aos="fade-up-left"
-               data-aos-duration="3000"
-               src="assets/lashes8.jpg"
-               alt=""
-               style="max-width: 340px">
-          <p data-aos="fade-up-left"
-             data-aos-duration="3000">Service description:
+            <h6 id="correction" data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">COLORING
+              /EYEBROW CORRECTION (HENNA /PAINT)</h6>
+            <p data-aos="fade-up-left" data-aos-duration="3000" style="text-align: end">PRICE: 130AED | 35$ | 450TL</p>
+            <img data-aos="fade-up-left" data-aos-duration="3000" src="assets/lashes9.jpg" alt=""
+                 style="max-width: 340px">
+            <p data-aos="fade-up-left" data-aos-duration="3000">
 
-            Eyebrow henna is a procedure that gives the eyebrows the desired tone.
-            During dyeing, not only the hairs acquire color, but also the skin under them.
-            This allows you to achieve the effect of "shadow", otherwise, "powder" effect.
-            Eyebrows look natural, but more bright, voluminous and expressive.
-
-            The advantages of long-term staining with henna is that
-            that after it there is no need to devote considerable time to eyebrow makeup every day.
-            Due to the similarity of the visual effect, henna staining is also called biotattoo.
-            In addition, with the help of this procedure, you can correct the shape of the eyebrows - just like with permanent makeup
-            .️</p>
-            </div>
-          <h6 id="prot"
-            data-aos="fade-up-right"
-            data-aos-duration="3000">PROTEIN EYELASH/EYEBROW REPAIR</h6>
-          <img data-aos="fade-up-right"
-               data-aos-duration="3000"
-               src="assets/lashes10.jpg"
-               alt=""
-               style="max-width: 340px">
-          <p data-aos="fade-up-right"
-             data-aos-duration="3000">Service description:
-
-            Protein recovery - the procedure for applying special products to the eyebrows,
-            which contain vitamins, minerals and proteins. Such products saturate the hairs with useful microelements,
-            accelerate growth and strengthen them, acting at the cellular level.
-            The procedure makes it possible to restore their natural beauty after using low-quality cosmetics,
-            frequent plucking, unhealthy diet, stress or lack of proper care.
-            Also, the need for the procedure arises after an unsuccessful tattoo, burns, chemotherapy
-            .️</p>
+              .️</p>
+          </div>
         </div>
       </div>
 
@@ -233,90 +169,88 @@
   </div>
 </template>
 
-<script setup>
-import {computed, onMounted, watch, ref} from "vue";
-import {state} from "src/store/simplestore";
+<script>
+import { computed, onMounted, watch, ref } from "vue";
+import { state } from "src/store/simplestore";
 
-
-const slide = ref(1)
-const autoplay = ref(true)
-const vdoPoster = '/assets/poster.png' // Переложи обложку локально, рядом с видео
-const vdoSrc = '/assets/vdo1.mp4' // Это путь относительно /public, если что
-
-
-// Определяем переменные, а значения ставим в mounted, т.к. только там доступен DOM
-let vdo = null
-let page = null
-
-// Конвертим процент скролла страницы в процент относительно продолжительности видео
-const relToTime = (rel) => vdo.duration/2 / 1000 * rel
-
-// Конвертим значение скролла сверху страницы в процент от всей страницы
-const scrollToRel = (y) => {
-  // Абсолютная высота: вычитаем значение вьюпорта браузера (т.к. в нём скролл останавливается)
-  const absHeight = page.clientHeight - document.documentElement.clientHeight
-  const value = Math.ceil(y / absHeight * 1000)
-  return value
-}
-
-// Получаем DOM элементы после монтажа компонента
-onMounted(() => {
-  vdo = document.getElementById('bg-vdo')
-  page = document.getElementById('page-container')
-})
-
-// Получаем реактивное значение скролла Y из общего хранилища
-const y = computed(() => state.scrollY)
-
-// Отслеживаем значение Y и на каждом изменении "мотаем" видео на нужный процент
-watch(y, async (val) => {
-    const rel = scrollToRel(val)
-    vdo.currentTime = relToTime(rel)
+export default ({
+    name: 'IndexPage',
+    data() {
+      return {
+        slide1: ref(1),
+        slide2: ref(1),
+        vdoPoster: '/assets/poster.png',
+        autoplay: ref(true),
+        showThin: false,
+        showStyling: false,
+        showLightening: false,
+        showLamination: false,
+        showBrand: false,
+        showWeb: false,
+      };
+    },
+    props: {
+      show: {
+        type: Boolean,
+        default: false,
+      },
+    },
+    methods: {
+      blockThin() {
+        this.showThin = !this.showThin
+      },
+      blockStyling() {
+        this.showStyling = !this.showStyling
+      },
+      blockLightening() {
+        this.showLightening = !this.showLightening
+      },
+      blockLamination() {
+        this.showLamination = !this.showLamination
+      },
+      blockBrand() {
+        this.showBrand = !this.showBrand
+      },
+      blockWeb() {
+        this.showWeb = !this.showWeb
+      },
+    },
   }
-);
+)
 
 
 </script>
 
 <style lang="scss" scoped>
 
-.list-page {
-  font-family: 'Chilanka';
+p{
+  font-size: 15px;
 }
+
 h5 {
   font-size: 28px;
 }
 
-h5, h6, p{
-  background: radial-gradient(49.99% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%) ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-  backdrop-filter: blur(2px);
-}
 .bg-mobile-vdo {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0;
-}
-@media screen and (max-width: 450px) {
-  .bg-mobile-vdo {
-    opacity: 1;
-  }
+  opacity: 0.3;
 }
 
-p{
+
+p {
   max-width: 340px;
 }
 
-.title-items{
+.title-items {
   width: 100%;
   text-align: -webkit-center;
 }
@@ -330,32 +264,122 @@ p{
 }
 
 
-#bg-vdo {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
 .my-btn {
   color: white;
   display: flex;
   flex-direction: column;
   margin: 15px;
 }
+
 .logo {
   animation: 5s show ease;
 }
 
 @keyframes show {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
+.content_info-name {
+  padding: 12px 8px;
+}
+
+.content_border-info {
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 20px;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+@media screen and (min-width: 900px) {
+  .content_border-info {
+    margin: 20px 20px 20px 0px;
+  }
+}
+.content_border-img {
+  border-width: 2px;
+  border-radius: 40px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color: #ffffff;
+  border-style: solid;
+}
+@media screen and (min-width: 900px) {
+  .content_border-img {
+    margin: 20px 0px 20px 20px;
+  }
+
+}
+
+.content_border-btn {
+  margin: 20px 0px;
+  border-width: 2px;
+  border-radius: 20px;
+  background-position: center center;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.content_info-description {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .content_info-description {
+    font-size: 12px;
+  }
+}
+.content_info-description--info {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 900px) {
+  .content_info-description--img {
+    width: 50%;
+    height: 100%
+  }
+}
+@media screen and (max-width: 900px) {
+  .content_info-description {
+    flex-flow: column;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content_info-description--info .content_border-info{
+    width: 80%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content_info-description--img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.rotate-animation {
+  rotate: 0;
+  transition: 1s;
+}
+
+.rotate-animation-obj {
+  transform: rotate(180deg);
+  transition: 1s;
+}
 </style>
 

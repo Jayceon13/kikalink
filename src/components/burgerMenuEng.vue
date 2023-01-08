@@ -52,12 +52,6 @@
         >
           COLORING / CORRECTION OF EYEBROWS (HENNA / PAINT)</q-btn
         >
-        <q-btn
-          @click="() => { hideBlock(); scrollToProt() }"
-          class="my-btn-services"
-        >
-          PROTEIN EYELASH/EYEBROW REPAIR</q-btn
-        >
       </div>
       <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column;">
         <q-btn
@@ -162,9 +156,6 @@ export default {
     },
     scrollToCorrection() {
       document.getElementById('correction').scrollIntoView({ behavior: 'smooth' });
-    },
-    scrollToProt() {
-      document.getElementById('prot').scrollIntoView({ behavior: 'smooth' });
     },
   },
 };

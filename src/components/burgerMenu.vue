@@ -50,11 +50,6 @@
           class="my-btn-services"
         >ОКРАШИВАНИЕ /КОРРЕКЦИЯ БРОВЕЙ (ХНА /КРАСКА)</q-btn
         >
-        <q-btn
-          @click="() => { hideBlock(); scrollToProt() }"
-          class="my-btn-services">
-                      ПРОТЕИНОВОЕ ВОССТАНОВЛЕНИЕ РЕСНИЦ /БРОВЕЙ
-          </q-btn>
       </div>
       <div class=" vertical-bottom q-btn-links" style="  display: flex; flex-direction: column;">
         <q-btn
@@ -164,9 +159,6 @@ export default {
     },
     scrollToCorrection() {
       document.getElementById('correction').scrollIntoView({ behavior: 'smooth' });
-    },
-    scrollToProt() {
-      document.getElementById('prot').scrollIntoView({ behavior: 'smooth' });
     },
   },
 };
