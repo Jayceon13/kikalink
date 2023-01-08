@@ -180,7 +180,6 @@ export default ({
         slide1: ref(1),
         slide2: ref(1),
         vdoPoster: '/assets/poster.png',
-        autoplay: ref(true),
         showThin: false,
         showStyling: false,
         showLightening: false,
