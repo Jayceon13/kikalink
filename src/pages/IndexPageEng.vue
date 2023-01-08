@@ -4,6 +4,7 @@
       <video class="bg-mobile-vdo" loop autoplay muted playsinline :poster="vdoPoster">
         <source src="/assets/video.mp4" type="video/mp4">
       </video>
+
       <img data-aos="zoom-in" data-aos-duration="3000" class="logo" alt="KIKA PRO MAKEUP" src="~assets/KIKAPROMAKE.svg"
            style="width: 200px; height: 200px" />
       <div class="main-page" style="color: white; margin: 20px">
@@ -12,14 +13,16 @@
             ABOUT ME
           </h5>
         </div>
+        <div class="about-main" style="width: 100%; text-align: center">
         <img data-aos="fade-up-right" data-aos-duration="3000" src="/assets/about1.jpg" alt="" style="max-width: 340px; margin-top: 65px">
-        <p data-aos="fade-up-right" data-aos-duration="3000" style="text-align: center">My name is Christina.<br>
+        <p data-aos="fade-up-right" data-aos-duration="3000" >My name is Christina.<br>
           For 6 years I have been creating beauty for other people.
           COMMERCIAL AND NON-COMMERCIAL makeup is my everything.<br><br>
           I create random images for filming music videos and commercials.
           <br><br>With my makeup you will be irresistible.<br><br>
           I create ads for beauty brands.
         </p>
+        </div>
         <div class="main-left" style="width: 100%; text-align: center">
           <h6 id="works" data-aos="fade-up-left" data-aos-duration="3000">MY WORKS</h6>
 
@@ -44,6 +47,15 @@
               <q-carousel-slide :name="13" img-src="assets/makeup13.jpg" />
               <q-carousel-slide :name="14" img-src="assets/makeup15.jpg" />
               <q-carousel-slide :name="15" img-src="assets/makeup14.jpg" />
+              <q-carousel-slide :name="16" img-src="assets/makeup16.jpg" />
+              <q-carousel-slide :name="17" img-src="assets/makeup17.jpg" />
+              <q-carousel-slide :name="18" img-src="assets/makeup18.jpg" />
+              <q-carousel-slide :name="19" img-src="assets/makeup20.jpg" />
+              <q-carousel-slide :name="20" img-src="assets/makeup21.jpg" />
+              <q-carousel-slide :name="21" img-src="assets/makeup22.jpg" />
+              <q-carousel-slide :name="22" img-src="assets/makeup23.jpg" />
+              <q-carousel-slide :name="23" img-src="assets/makeup24.jpg" />
+              <q-carousel-slide :name="24" img-src="assets/makeup25.jpg" />
             </q-carousel>
             <div class="works-left" style="width: 100%; text-align: -webkit-right; margin-top: 15px">
               <p data-aos="fade-up-left" data-aos-duration="3000">EYEBROWS | EYELASHES</p>
